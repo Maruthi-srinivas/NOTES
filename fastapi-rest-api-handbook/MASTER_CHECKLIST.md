@@ -1,0 +1,854 @@
+# Master Checklist
+
+Stable inventory for the REST API and FastAPI handbook.
+
+- Domains: 31
+- Subtopics: 619
+- Chapters: 118
+- Projects: 3
+
+Status values: `NOT_STARTED`, `OUTLINED`, `DRAFTED`, `TECHNICALLY_REVIEWED`, `TESTED`, `COMPLETE`.
+
+A topic is not complete because a heading exists. `COMPLETE` requires the chapter section, an implementation or an explicit not-applicable reason, a test or a documented verification gap, exercises, and an interview answer.
+
+## Domain 1: HTTP and Web Fundamentals
+
+Directory: [01_http_web_fundamentals](01_http_web_fundamentals/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D01-T01 | Client-server architecture | [01_http_web_fundamentals/01-client-server-and-request-lifecycle.md](01_http_web_fundamentals/01-client-server-and-request-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D01-T02 | Request-response lifecycle | [01_http_web_fundamentals/01-client-server-and-request-lifecycle.md](01_http_web_fundamentals/01-client-server-and-request-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D01-T03 | HTTP and HTTPS | [01_http_web_fundamentals/02-http-versions-and-connections.md](01_http_web_fundamentals/02-http-versions-and-connections.md) | TECHNICALLY_REVIEWED |
+| D01-T04 | HTTP/1.1, HTTP/2, and HTTP/3 fundamentals | [01_http_web_fundamentals/02-http-versions-and-connections.md](01_http_web_fundamentals/02-http-versions-and-connections.md) | TECHNICALLY_REVIEWED |
+| D01-T05 | HTTP request structure | [01_http_web_fundamentals/03-http-message-structure.md](01_http_web_fundamentals/03-http-message-structure.md) | TECHNICALLY_REVIEWED |
+| D01-T06 | HTTP response structure | [01_http_web_fundamentals/03-http-message-structure.md](01_http_web_fundamentals/03-http-message-structure.md) | TECHNICALLY_REVIEWED |
+| D01-T07 | Request line, headers, and body | [01_http_web_fundamentals/03-http-message-structure.md](01_http_web_fundamentals/03-http-message-structure.md) | TECHNICALLY_REVIEWED |
+| D01-T08 | Response headers and body | [01_http_web_fundamentals/03-http-message-structure.md](01_http_web_fundamentals/03-http-message-structure.md) | TECHNICALLY_REVIEWED |
+| D01-T09 | HTTP methods: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS | [01_http_web_fundamentals/04-http-methods-safety-idempotence.md](01_http_web_fundamentals/04-http-methods-safety-idempotence.md) | TECHNICALLY_REVIEWED |
+| D01-T10 | Safe and idempotent methods | [01_http_web_fundamentals/04-http-methods-safety-idempotence.md](01_http_web_fundamentals/04-http-methods-safety-idempotence.md) | TECHNICALLY_REVIEWED |
+| D01-T11 | HTTP status codes: 1xx, 2xx, 3xx, 4xx, 5xx | [01_http_web_fundamentals/05-status-code-classes.md](01_http_web_fundamentals/05-status-code-classes.md) | TECHNICALLY_REVIEWED |
+| D01-T12 | Content-Type and Accept headers | [01_http_web_fundamentals/06-content-negotiation.md](01_http_web_fundamentals/06-content-negotiation.md) | TECHNICALLY_REVIEWED |
+| D01-T13 | Content negotiation | [01_http_web_fundamentals/06-content-negotiation.md](01_http_web_fundamentals/06-content-negotiation.md) | TECHNICALLY_REVIEWED |
+| D01-T14 | Content-Length and transfer encoding | [01_http_web_fundamentals/03-http-message-structure.md](01_http_web_fundamentals/03-http-message-structure.md) | TECHNICALLY_REVIEWED |
+| D01-T15 | Authorization and WWW-Authenticate headers | [01_http_web_fundamentals/07-headers-caching-redirects-cors.md](01_http_web_fundamentals/07-headers-caching-redirects-cors.md) | TECHNICALLY_REVIEWED |
+| D01-T16 | Cookies and sessions | [01_http_web_fundamentals/07-headers-caching-redirects-cors.md](01_http_web_fundamentals/07-headers-caching-redirects-cors.md) | TECHNICALLY_REVIEWED |
+| D01-T17 | Cache-Control, ETag, and Last-Modified | [01_http_web_fundamentals/07-headers-caching-redirects-cors.md](01_http_web_fundamentals/07-headers-caching-redirects-cors.md) | TECHNICALLY_REVIEWED |
+| D01-T18 | Conditional requests | [01_http_web_fundamentals/07-headers-caching-redirects-cors.md](01_http_web_fundamentals/07-headers-caching-redirects-cors.md) | TECHNICALLY_REVIEWED |
+| D01-T19 | Redirects | [01_http_web_fundamentals/07-headers-caching-redirects-cors.md](01_http_web_fundamentals/07-headers-caching-redirects-cors.md) | TECHNICALLY_REVIEWED |
+| D01-T20 | CORS and preflight requests | [01_http_web_fundamentals/07-headers-caching-redirects-cors.md](01_http_web_fundamentals/07-headers-caching-redirects-cors.md) | TECHNICALLY_REVIEWED |
+| D01-T21 | DNS, TCP, TLS, and connection lifecycle | [01_http_web_fundamentals/02-http-versions-and-connections.md](01_http_web_fundamentals/02-http-versions-and-connections.md) | TECHNICALLY_REVIEWED |
+| D01-T22 | Keep-alive and connection reuse | [01_http_web_fundamentals/02-http-versions-and-connections.md](01_http_web_fundamentals/02-http-versions-and-connections.md) | TECHNICALLY_REVIEWED |
+
+## Domain 2: REST Architectural Principles
+
+Directory: [02_rest_architecture](02_rest_architecture/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D02-T01 | What REST is | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T02 | REST versus HTTP APIs | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T03 | Client-server constraint | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T04 | Statelessness | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T05 | Cacheability | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T06 | Uniform interface | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T07 | Layered system | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T08 | Code-on-demand | [02_rest_architecture/01-rest-constraints.md](02_rest_architecture/01-rest-constraints.md) | TECHNICALLY_REVIEWED |
+| D02-T09 | Resources and resource representations | [02_rest_architecture/02-resources-and-uris.md](02_rest_architecture/02-resources-and-uris.md) | TECHNICALLY_REVIEWED |
+| D02-T10 | Resource identifiers and URIs | [02_rest_architecture/02-resources-and-uris.md](02_rest_architecture/02-resources-and-uris.md) | TECHNICALLY_REVIEWED |
+| D02-T11 | Nouns versus verbs in endpoint design | [02_rest_architecture/02-resources-and-uris.md](02_rest_architecture/02-resources-and-uris.md) | TECHNICALLY_REVIEWED |
+| D02-T12 | Resource relationships and nested resources | [02_rest_architecture/02-resources-and-uris.md](02_rest_architecture/02-resources-and-uris.md) | TECHNICALLY_REVIEWED |
+| D02-T13 | Collection versus individual resource endpoints | [02_rest_architecture/02-resources-and-uris.md](02_rest_architecture/02-resources-and-uris.md) | TECHNICALLY_REVIEWED |
+| D02-T14 | CRUD-to-HTTP method mapping | [02_rest_architecture/03-crud-maturity-hateoas.md](02_rest_architecture/03-crud-maturity-hateoas.md) | TECHNICALLY_REVIEWED |
+| D02-T15 | REST maturity model and HATEOAS | [02_rest_architecture/03-crud-maturity-hateoas.md](02_rest_architecture/03-crud-maturity-hateoas.md) | TECHNICALLY_REVIEWED |
+| D02-T16 | REST versus RPC | [02_rest_architecture/04-rest-vs-rpc-graphql-grpc.md](02_rest_architecture/04-rest-vs-rpc-graphql-grpc.md) | TECHNICALLY_REVIEWED |
+| D02-T17 | REST versus GraphQL | [02_rest_architecture/04-rest-vs-rpc-graphql-grpc.md](02_rest_architecture/04-rest-vs-rpc-graphql-grpc.md) | TECHNICALLY_REVIEWED |
+| D02-T18 | REST versus gRPC | [02_rest_architecture/04-rest-vs-rpc-graphql-grpc.md](02_rest_architecture/04-rest-vs-rpc-graphql-grpc.md) | TECHNICALLY_REVIEWED |
+
+## Domain 3: HTTP Methods and Status Codes
+
+Directory: [03_http_methods_status_codes](03_http_methods_status_codes/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D03-T01 | GET semantics | [03_http_methods_status_codes/01-method-semantics.md](03_http_methods_status_codes/01-method-semantics.md) | TECHNICALLY_REVIEWED |
+| D03-T02 | POST semantics | [03_http_methods_status_codes/01-method-semantics.md](03_http_methods_status_codes/01-method-semantics.md) | TECHNICALLY_REVIEWED |
+| D03-T03 | PUT versus PATCH | [03_http_methods_status_codes/01-method-semantics.md](03_http_methods_status_codes/01-method-semantics.md) | TECHNICALLY_REVIEWED |
+| D03-T04 | DELETE semantics | [03_http_methods_status_codes/01-method-semantics.md](03_http_methods_status_codes/01-method-semantics.md) | TECHNICALLY_REVIEWED |
+| D03-T05 | HEAD and OPTIONS | [03_http_methods_status_codes/01-method-semantics.md](03_http_methods_status_codes/01-method-semantics.md) | TECHNICALLY_REVIEWED |
+| D03-T06 | Safe methods versus idempotent methods | [03_http_methods_status_codes/01-method-semantics.md](03_http_methods_status_codes/01-method-semantics.md) | TECHNICALLY_REVIEWED |
+| D03-T07 | Idempotent API design | [03_http_methods_status_codes/01-method-semantics.md](03_http_methods_status_codes/01-method-semantics.md) | TECHNICALLY_REVIEWED |
+| D03-T08 | 200 OK | [03_http_methods_status_codes/02-success-status-codes.md](03_http_methods_status_codes/02-success-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T09 | 201 Created | [03_http_methods_status_codes/02-success-status-codes.md](03_http_methods_status_codes/02-success-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T10 | 202 Accepted | [03_http_methods_status_codes/02-success-status-codes.md](03_http_methods_status_codes/02-success-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T11 | 204 No Content | [03_http_methods_status_codes/02-success-status-codes.md](03_http_methods_status_codes/02-success-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T12 | 301, 302, 307, and 308 | [03_http_methods_status_codes/03-redirects-and-not-modified.md](03_http_methods_status_codes/03-redirects-and-not-modified.md) | TECHNICALLY_REVIEWED |
+| D03-T13 | 304 Not Modified | [03_http_methods_status_codes/03-redirects-and-not-modified.md](03_http_methods_status_codes/03-redirects-and-not-modified.md) | TECHNICALLY_REVIEWED |
+| D03-T14 | 400 Bad Request | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T15 | 401 Unauthorized versus 403 Forbidden | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T16 | 404 Not Found | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T17 | 405 Method Not Allowed | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T18 | 409 Conflict | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T19 | 410 Gone | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T20 | 412 Precondition Failed | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T21 | 413 Content Too Large | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T22 | 415 Unsupported Media Type | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T23 | 422 Unprocessable Content | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T24 | 429 Too Many Requests | [03_http_methods_status_codes/04-client-error-status-codes.md](03_http_methods_status_codes/04-client-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T25 | 500 Internal Server Error | [03_http_methods_status_codes/05-server-error-status-codes.md](03_http_methods_status_codes/05-server-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T26 | 502 Bad Gateway | [03_http_methods_status_codes/05-server-error-status-codes.md](03_http_methods_status_codes/05-server-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T27 | 503 Service Unavailable | [03_http_methods_status_codes/05-server-error-status-codes.md](03_http_methods_status_codes/05-server-error-status-codes.md) | TECHNICALLY_REVIEWED |
+| D03-T28 | 504 Gateway Timeout | [03_http_methods_status_codes/05-server-error-status-codes.md](03_http_methods_status_codes/05-server-error-status-codes.md) | TECHNICALLY_REVIEWED |
+
+## Domain 4: REST API Endpoint Design
+
+Directory: [04_endpoint_design](04_endpoint_design/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D04-T01 | Resource naming conventions | [04_endpoint_design/01-resource-naming-and-nesting.md](04_endpoint_design/01-resource-naming-and-nesting.md) | TECHNICALLY_REVIEWED |
+| D04-T02 | URI and URL design | [04_endpoint_design/01-resource-naming-and-nesting.md](04_endpoint_design/01-resource-naming-and-nesting.md) | TECHNICALLY_REVIEWED |
+| D04-T03 | Singular versus plural resource names | [04_endpoint_design/01-resource-naming-and-nesting.md](04_endpoint_design/01-resource-naming-and-nesting.md) | TECHNICALLY_REVIEWED |
+| D04-T04 | Nested resource design | [04_endpoint_design/01-resource-naming-and-nesting.md](04_endpoint_design/01-resource-naming-and-nesting.md) | TECHNICALLY_REVIEWED |
+| D04-T05 | Avoiding excessively nested URLs | [04_endpoint_design/01-resource-naming-and-nesting.md](04_endpoint_design/01-resource-naming-and-nesting.md) | TECHNICALLY_REVIEWED |
+| D04-T06 | Collection endpoints | [04_endpoint_design/01-resource-naming-and-nesting.md](04_endpoint_design/01-resource-naming-and-nesting.md) | TECHNICALLY_REVIEWED |
+| D04-T07 | Filtering | [04_endpoint_design/02-collections-query-and-actions.md](04_endpoint_design/02-collections-query-and-actions.md) | TECHNICALLY_REVIEWED |
+| D04-T08 | Sorting | [04_endpoint_design/02-collections-query-and-actions.md](04_endpoint_design/02-collections-query-and-actions.md) | TECHNICALLY_REVIEWED |
+| D04-T09 | Pagination | [04_endpoint_design/02-collections-query-and-actions.md](04_endpoint_design/02-collections-query-and-actions.md) | TECHNICALLY_REVIEWED |
+| D04-T10 | Search endpoints | [04_endpoint_design/02-collections-query-and-actions.md](04_endpoint_design/02-collections-query-and-actions.md) | TECHNICALLY_REVIEWED |
+| D04-T11 | Bulk operations | [04_endpoint_design/02-collections-query-and-actions.md](04_endpoint_design/02-collections-query-and-actions.md) | TECHNICALLY_REVIEWED |
+| D04-T12 | Batch APIs | [04_endpoint_design/02-collections-query-and-actions.md](04_endpoint_design/02-collections-query-and-actions.md) | TECHNICALLY_REVIEWED |
+| D04-T13 | Action endpoints and RPC-style exceptions | [04_endpoint_design/02-collections-query-and-actions.md](04_endpoint_design/02-collections-query-and-actions.md) | TECHNICALLY_REVIEWED |
+| D04-T14 | Query parameters versus path parameters | [04_endpoint_design/03-parameters-bodies-contracts.md](04_endpoint_design/03-parameters-bodies-contracts.md) | TECHNICALLY_REVIEWED |
+| D04-T15 | Request body design | [04_endpoint_design/03-parameters-bodies-contracts.md](04_endpoint_design/03-parameters-bodies-contracts.md) | TECHNICALLY_REVIEWED |
+| D04-T16 | Response representation design | [04_endpoint_design/03-parameters-bodies-contracts.md](04_endpoint_design/03-parameters-bodies-contracts.md) | TECHNICALLY_REVIEWED |
+| D04-T17 | Consistent naming conventions | [04_endpoint_design/03-parameters-bodies-contracts.md](04_endpoint_design/03-parameters-bodies-contracts.md) | TECHNICALLY_REVIEWED |
+| D04-T18 | Consistent API contracts | [04_endpoint_design/03-parameters-bodies-contracts.md](04_endpoint_design/03-parameters-bodies-contracts.md) | TECHNICALLY_REVIEWED |
+| D04-T19 | Partial resource updates | [04_endpoint_design/04-partial-updates-and-lifecycle.md](04_endpoint_design/04-partial-updates-and-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D04-T20 | Resource lifecycle and state transitions | [04_endpoint_design/04-partial-updates-and-lifecycle.md](04_endpoint_design/04-partial-updates-and-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D04-T21 | API versioning | [04_endpoint_design/05-versioning-and-compatibility.md](04_endpoint_design/05-versioning-and-compatibility.md) | TECHNICALLY_REVIEWED |
+| D04-T22 | Backward compatibility | [04_endpoint_design/05-versioning-and-compatibility.md](04_endpoint_design/05-versioning-and-compatibility.md) | TECHNICALLY_REVIEWED |
+| D04-T23 | Deprecation policies | [04_endpoint_design/05-versioning-and-compatibility.md](04_endpoint_design/05-versioning-and-compatibility.md) | TECHNICALLY_REVIEWED |
+
+## Domain 5: Request and Response Design
+
+Directory: [05_request_response_design](05_request_response_design/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D05-T01 | JSON request and response formats | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T02 | Serialization and deserialization | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T03 | Request validation | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T04 | Response validation | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T05 | Required versus optional fields | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T06 | Nullable fields | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T07 | Default values | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T08 | Field constraints | [05_request_response_design/01-json-validation-and-fields.md](05_request_response_design/01-json-validation-and-fields.md) | TECHNICALLY_REVIEWED |
+| D05-T09 | Date and time formats | [05_request_response_design/02-temporal-numeric-and-nested-values.md](05_request_response_design/02-temporal-numeric-and-nested-values.md) | TECHNICALLY_REVIEWED |
+| D05-T10 | Time zones and UTC | [05_request_response_design/02-temporal-numeric-and-nested-values.md](05_request_response_design/02-temporal-numeric-and-nested-values.md) | TECHNICALLY_REVIEWED |
+| D05-T11 | Decimal and monetary values | [05_request_response_design/02-temporal-numeric-and-nested-values.md](05_request_response_design/02-temporal-numeric-and-nested-values.md) | TECHNICALLY_REVIEWED |
+| D05-T12 | Enum fields | [05_request_response_design/02-temporal-numeric-and-nested-values.md](05_request_response_design/02-temporal-numeric-and-nested-values.md) | TECHNICALLY_REVIEWED |
+| D05-T13 | Nested objects and arrays | [05_request_response_design/02-temporal-numeric-and-nested-values.md](05_request_response_design/02-temporal-numeric-and-nested-values.md) | TECHNICALLY_REVIEWED |
+| D05-T14 | File upload and download responses | [05_request_response_design/03-file-payloads.md](05_request_response_design/03-file-payloads.md) | TECHNICALLY_REVIEWED |
+| D05-T15 | Consistent error response schemas | [05_request_response_design/04-error-contracts.md](05_request_response_design/04-error-contracts.md) | TECHNICALLY_REVIEWED |
+| D05-T16 | Error codes and error messages | [05_request_response_design/04-error-contracts.md](05_request_response_design/04-error-contracts.md) | TECHNICALLY_REVIEWED |
+| D05-T17 | Correlation IDs and request IDs | [05_request_response_design/04-error-contracts.md](05_request_response_design/04-error-contracts.md) | TECHNICALLY_REVIEWED |
+| D05-T18 | RFC 9457 Problem Details for HTTP APIs | [05_request_response_design/04-error-contracts.md](05_request_response_design/04-error-contracts.md) | TECHNICALLY_REVIEWED |
+| D05-T19 | Avoiding sensitive information in responses | [05_request_response_design/04-error-contracts.md](05_request_response_design/04-error-contracts.md) | TECHNICALLY_REVIEWED |
+
+## Domain 6: Pagination, Filtering, and Search
+
+Directory: [06_pagination_filtering_search](06_pagination_filtering_search/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D06-T01 | Offset-based pagination | [06_pagination_filtering_search/01-offset-and-page-pagination.md](06_pagination_filtering_search/01-offset-and-page-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T02 | Page-number pagination | [06_pagination_filtering_search/01-offset-and-page-pagination.md](06_pagination_filtering_search/01-offset-and-page-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T03 | Limit and offset | [06_pagination_filtering_search/01-offset-and-page-pagination.md](06_pagination_filtering_search/01-offset-and-page-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T04 | Cursor-based pagination | [06_pagination_filtering_search/02-cursor-and-keyset-pagination.md](06_pagination_filtering_search/02-cursor-and-keyset-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T05 | Keyset pagination | [06_pagination_filtering_search/02-cursor-and-keyset-pagination.md](06_pagination_filtering_search/02-cursor-and-keyset-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T06 | Stable ordering | [06_pagination_filtering_search/02-cursor-and-keyset-pagination.md](06_pagination_filtering_search/02-cursor-and-keyset-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T07 | Pagination under concurrent updates | [06_pagination_filtering_search/02-cursor-and-keyset-pagination.md](06_pagination_filtering_search/02-cursor-and-keyset-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T08 | Total-count tradeoffs | [06_pagination_filtering_search/02-cursor-and-keyset-pagination.md](06_pagination_filtering_search/02-cursor-and-keyset-pagination.md) | TECHNICALLY_REVIEWED |
+| D06-T09 | Filtering by multiple fields | [06_pagination_filtering_search/03-filtering-sorting-search.md](06_pagination_filtering_search/03-filtering-sorting-search.md) | TECHNICALLY_REVIEWED |
+| D06-T10 | Range filters | [06_pagination_filtering_search/03-filtering-sorting-search.md](06_pagination_filtering_search/03-filtering-sorting-search.md) | TECHNICALLY_REVIEWED |
+| D06-T11 | Sorting by multiple columns | [06_pagination_filtering_search/03-filtering-sorting-search.md](06_pagination_filtering_search/03-filtering-sorting-search.md) | TECHNICALLY_REVIEWED |
+| D06-T12 | Search queries | [06_pagination_filtering_search/03-filtering-sorting-search.md](06_pagination_filtering_search/03-filtering-sorting-search.md) | TECHNICALLY_REVIEWED |
+| D06-T13 | Validation of filter and sort fields | [06_pagination_filtering_search/03-filtering-sorting-search.md](06_pagination_filtering_search/03-filtering-sorting-search.md) | TECHNICALLY_REVIEWED |
+| D06-T14 | Database indexing for API queries | [06_pagination_filtering_search/04-query-performance-and-security.md](06_pagination_filtering_search/04-query-performance-and-security.md) | TECHNICALLY_REVIEWED |
+| D06-T15 | Pagination performance | [06_pagination_filtering_search/04-query-performance-and-security.md](06_pagination_filtering_search/04-query-performance-and-security.md) | TECHNICALLY_REVIEWED |
+| D06-T16 | Search and filtering security | [06_pagination_filtering_search/04-query-performance-and-security.md](06_pagination_filtering_search/04-query-performance-and-security.md) | TECHNICALLY_REVIEWED |
+
+## Domain 7: Authentication and Authorization
+
+Directory: [07_authentication_authorization](07_authentication_authorization/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D07-T01 | Authentication versus authorization | [07_authentication_authorization/01-auth-mechanisms.md](07_authentication_authorization/01-auth-mechanisms.md) | TECHNICALLY_REVIEWED |
+| D07-T02 | Cookie-based sessions | [07_authentication_authorization/01-auth-mechanisms.md](07_authentication_authorization/01-auth-mechanisms.md) | TECHNICALLY_REVIEWED |
+| D07-T03 | Token-based authentication | [07_authentication_authorization/01-auth-mechanisms.md](07_authentication_authorization/01-auth-mechanisms.md) | TECHNICALLY_REVIEWED |
+| D07-T04 | API keys | [07_authentication_authorization/01-auth-mechanisms.md](07_authentication_authorization/01-auth-mechanisms.md) | TECHNICALLY_REVIEWED |
+| D07-T05 | Basic authentication and its limitations | [07_authentication_authorization/01-auth-mechanisms.md](07_authentication_authorization/01-auth-mechanisms.md) | TECHNICALLY_REVIEWED |
+| D07-T06 | Bearer tokens | [07_authentication_authorization/01-auth-mechanisms.md](07_authentication_authorization/01-auth-mechanisms.md) | TECHNICALLY_REVIEWED |
+| D07-T07 | JWT structure and validation | [07_authentication_authorization/02-jwt-oauth-oidc.md](07_authentication_authorization/02-jwt-oauth-oidc.md) | TECHNICALLY_REVIEWED |
+| D07-T08 | Access tokens and refresh tokens | [07_authentication_authorization/02-jwt-oauth-oidc.md](07_authentication_authorization/02-jwt-oauth-oidc.md) | TECHNICALLY_REVIEWED |
+| D07-T09 | OAuth 2.0 | [07_authentication_authorization/02-jwt-oauth-oidc.md](07_authentication_authorization/02-jwt-oauth-oidc.md) | TECHNICALLY_REVIEWED |
+| D07-T10 | OpenID Connect | [07_authentication_authorization/02-jwt-oauth-oidc.md](07_authentication_authorization/02-jwt-oauth-oidc.md) | TECHNICALLY_REVIEWED |
+| D07-T11 | Role-Based Access Control (RBAC) | [07_authentication_authorization/03-authorization-models.md](07_authentication_authorization/03-authorization-models.md) | TECHNICALLY_REVIEWED |
+| D07-T12 | Attribute-Based Access Control (ABAC) | [07_authentication_authorization/03-authorization-models.md](07_authentication_authorization/03-authorization-models.md) | TECHNICALLY_REVIEWED |
+| D07-T13 | Resource-level authorization | [07_authentication_authorization/03-authorization-models.md](07_authentication_authorization/03-authorization-models.md) | TECHNICALLY_REVIEWED |
+| D07-T14 | Object-level authorization | [07_authentication_authorization/03-authorization-models.md](07_authentication_authorization/03-authorization-models.md) | TECHNICALLY_REVIEWED |
+| D07-T15 | Multi-tenant access control | [07_authentication_authorization/03-authorization-models.md](07_authentication_authorization/03-authorization-models.md) | TECHNICALLY_REVIEWED |
+| D07-T16 | Password hashing | [07_authentication_authorization/04-secrets-passwords-tokens.md](07_authentication_authorization/04-secrets-passwords-tokens.md) | TECHNICALLY_REVIEWED |
+| D07-T17 | Token expiry and revocation | [07_authentication_authorization/04-secrets-passwords-tokens.md](07_authentication_authorization/04-secrets-passwords-tokens.md) | TECHNICALLY_REVIEWED |
+| D07-T18 | Secret management | [07_authentication_authorization/04-secrets-passwords-tokens.md](07_authentication_authorization/04-secrets-passwords-tokens.md) | TECHNICALLY_REVIEWED |
+| D07-T19 | CSRF protection | [07_authentication_authorization/05-csrf-cors-policies-limits.md](07_authentication_authorization/05-csrf-cors-policies-limits.md) | TECHNICALLY_REVIEWED |
+| D07-T20 | CORS security | [07_authentication_authorization/05-csrf-cors-policies-limits.md](07_authentication_authorization/05-csrf-cors-policies-limits.md) | TECHNICALLY_REVIEWED |
+| D07-T21 | Authentication middleware | [07_authentication_authorization/05-csrf-cors-policies-limits.md](07_authentication_authorization/05-csrf-cors-policies-limits.md) | TECHNICALLY_REVIEWED |
+| D07-T22 | Authorization policies | [07_authentication_authorization/05-csrf-cors-policies-limits.md](07_authentication_authorization/05-csrf-cors-policies-limits.md) | TECHNICALLY_REVIEWED |
+| D07-T23 | Rate limiting by user or API key | [07_authentication_authorization/05-csrf-cors-policies-limits.md](07_authentication_authorization/05-csrf-cors-policies-limits.md) | TECHNICALLY_REVIEWED |
+
+## Domain 8: API Reliability and Resilience
+
+Directory: [08_reliability_resilience](08_reliability_resilience/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D08-T01 | Request timeouts | [08_reliability_resilience/01-timeouts-retries-idempotency.md](08_reliability_resilience/01-timeouts-retries-idempotency.md) | TECHNICALLY_REVIEWED |
+| D08-T02 | Connection timeouts | [08_reliability_resilience/01-timeouts-retries-idempotency.md](08_reliability_resilience/01-timeouts-retries-idempotency.md) | TECHNICALLY_REVIEWED |
+| D08-T03 | Retry policies | [08_reliability_resilience/01-timeouts-retries-idempotency.md](08_reliability_resilience/01-timeouts-retries-idempotency.md) | TECHNICALLY_REVIEWED |
+| D08-T04 | Exponential backoff and jitter | [08_reliability_resilience/01-timeouts-retries-idempotency.md](08_reliability_resilience/01-timeouts-retries-idempotency.md) | TECHNICALLY_REVIEWED |
+| D08-T05 | Idempotency keys | [08_reliability_resilience/01-timeouts-retries-idempotency.md](08_reliability_resilience/01-timeouts-retries-idempotency.md) | TECHNICALLY_REVIEWED |
+| D08-T06 | Duplicate request prevention | [08_reliability_resilience/01-timeouts-retries-idempotency.md](08_reliability_resilience/01-timeouts-retries-idempotency.md) | TECHNICALLY_REVIEWED |
+| D08-T07 | Circuit breakers | [08_reliability_resilience/02-circuit-breakers-limits.md](08_reliability_resilience/02-circuit-breakers-limits.md) | TECHNICALLY_REVIEWED |
+| D08-T08 | Bulkheads | [08_reliability_resilience/02-circuit-breakers-limits.md](08_reliability_resilience/02-circuit-breakers-limits.md) | TECHNICALLY_REVIEWED |
+| D08-T09 | Rate limiting | [08_reliability_resilience/02-circuit-breakers-limits.md](08_reliability_resilience/02-circuit-breakers-limits.md) | TECHNICALLY_REVIEWED |
+| D08-T10 | Throttling and quotas | [08_reliability_resilience/02-circuit-breakers-limits.md](08_reliability_resilience/02-circuit-breakers-limits.md) | TECHNICALLY_REVIEWED |
+| D08-T11 | Request size limits | [08_reliability_resilience/02-circuit-breakers-limits.md](08_reliability_resilience/02-circuit-breakers-limits.md) | TECHNICALLY_REVIEWED |
+| D08-T12 | Concurrency limits | [08_reliability_resilience/02-circuit-breakers-limits.md](08_reliability_resilience/02-circuit-breakers-limits.md) | TECHNICALLY_REVIEWED |
+| D08-T13 | Graceful degradation | [08_reliability_resilience/03-degradation-and-failure-domains.md](08_reliability_resilience/03-degradation-and-failure-domains.md) | TECHNICALLY_REVIEWED |
+| D08-T14 | Load shedding | [08_reliability_resilience/03-degradation-and-failure-domains.md](08_reliability_resilience/03-degradation-and-failure-domains.md) | TECHNICALLY_REVIEWED |
+| D08-T15 | Error propagation | [08_reliability_resilience/03-degradation-and-failure-domains.md](08_reliability_resilience/03-degradation-and-failure-domains.md) | TECHNICALLY_REVIEWED |
+| D08-T16 | Transaction boundaries | [08_reliability_resilience/03-degradation-and-failure-domains.md](08_reliability_resilience/03-degradation-and-failure-domains.md) | TECHNICALLY_REVIEWED |
+| D08-T17 | Distributed request failures | [08_reliability_resilience/03-degradation-and-failure-domains.md](08_reliability_resilience/03-degradation-and-failure-domains.md) | TECHNICALLY_REVIEWED |
+| D08-T18 | Retry-safe operations | [08_reliability_resilience/04-cancellation-and-slo.md](08_reliability_resilience/04-cancellation-and-slo.md) | TECHNICALLY_REVIEWED |
+| D08-T19 | Request cancellation | [08_reliability_resilience/04-cancellation-and-slo.md](08_reliability_resilience/04-cancellation-and-slo.md) | TECHNICALLY_REVIEWED |
+| D08-T20 | API availability and SLIs/SLOs | [08_reliability_resilience/04-cancellation-and-slo.md](08_reliability_resilience/04-cancellation-and-slo.md) | TECHNICALLY_REVIEWED |
+
+## Domain 9: Caching and Performance
+
+Directory: [09_caching_performance](09_caching_performance/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D09-T01 | Browser and client-side caching | [09_caching_performance/01-cache-layers.md](09_caching_performance/01-cache-layers.md) | TECHNICALLY_REVIEWED |
+| D09-T02 | Proxy and CDN caching | [09_caching_performance/01-cache-layers.md](09_caching_performance/01-cache-layers.md) | TECHNICALLY_REVIEWED |
+| D09-T03 | Server-side caching | [09_caching_performance/01-cache-layers.md](09_caching_performance/01-cache-layers.md) | TECHNICALLY_REVIEWED |
+| D09-T04 | Redis-backed caching | [09_caching_performance/01-cache-layers.md](09_caching_performance/01-cache-layers.md) | TECHNICALLY_REVIEWED |
+| D09-T05 | Cache-Control directives | [09_caching_performance/02-validators-and-invalidation.md](09_caching_performance/02-validators-and-invalidation.md) | TECHNICALLY_REVIEWED |
+| D09-T06 | ETags | [09_caching_performance/02-validators-and-invalidation.md](09_caching_performance/02-validators-and-invalidation.md) | TECHNICALLY_REVIEWED |
+| D09-T07 | Conditional GET requests | [09_caching_performance/02-validators-and-invalidation.md](09_caching_performance/02-validators-and-invalidation.md) | TECHNICALLY_REVIEWED |
+| D09-T08 | Cache invalidation | [09_caching_performance/02-validators-and-invalidation.md](09_caching_performance/02-validators-and-invalidation.md) | TECHNICALLY_REVIEWED |
+| D09-T09 | Cache keys and tenant isolation | [09_caching_performance/02-validators-and-invalidation.md](09_caching_performance/02-validators-and-invalidation.md) | TECHNICALLY_REVIEWED |
+| D09-T10 | Compression | [09_caching_performance/02-validators-and-invalidation.md](09_caching_performance/02-validators-and-invalidation.md) | TECHNICALLY_REVIEWED |
+| D09-T11 | Connection pooling | [09_caching_performance/03-data-access-performance.md](09_caching_performance/03-data-access-performance.md) | TECHNICALLY_REVIEWED |
+| D09-T12 | Database query optimization | [09_caching_performance/03-data-access-performance.md](09_caching_performance/03-data-access-performance.md) | TECHNICALLY_REVIEWED |
+| D09-T13 | N+1 query problems | [09_caching_performance/03-data-access-performance.md](09_caching_performance/03-data-access-performance.md) | TECHNICALLY_REVIEWED |
+| D09-T14 | Response size optimization | [09_caching_performance/03-data-access-performance.md](09_caching_performance/03-data-access-performance.md) | TECHNICALLY_REVIEWED |
+| D09-T15 | Streaming responses | [09_caching_performance/03-data-access-performance.md](09_caching_performance/03-data-access-performance.md) | TECHNICALLY_REVIEWED |
+| D09-T16 | Latency percentiles: p50, p95, p99 | [09_caching_performance/04-latency-throughput-load.md](09_caching_performance/04-latency-throughput-load.md) | TECHNICALLY_REVIEWED |
+| D09-T17 | Throughput and concurrency | [09_caching_performance/04-latency-throughput-load.md](09_caching_performance/04-latency-throughput-load.md) | TECHNICALLY_REVIEWED |
+| D09-T18 | Load testing and stress testing | [09_caching_performance/04-latency-throughput-load.md](09_caching_performance/04-latency-throughput-load.md) | TECHNICALLY_REVIEWED |
+
+## Domain 10: API Security
+
+Directory: [10_api_security](10_api_security/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D10-T01 | OWASP API Security Top 10 | [10_api_security/01-owasp-api-top-risks.md](10_api_security/01-owasp-api-top-risks.md) | TECHNICALLY_REVIEWED |
+| D10-T02 | Broken Object Level Authorization (BOLA) | [10_api_security/01-owasp-api-top-risks.md](10_api_security/01-owasp-api-top-risks.md) | TECHNICALLY_REVIEWED |
+| D10-T03 | Broken Authentication | [10_api_security/01-owasp-api-top-risks.md](10_api_security/01-owasp-api-top-risks.md) | TECHNICALLY_REVIEWED |
+| D10-T04 | Broken Object Property Level Authorization | [10_api_security/01-owasp-api-top-risks.md](10_api_security/01-owasp-api-top-risks.md) | TECHNICALLY_REVIEWED |
+| D10-T05 | Unrestricted resource consumption | [10_api_security/01-owasp-api-top-risks.md](10_api_security/01-owasp-api-top-risks.md) | TECHNICALLY_REVIEWED |
+| D10-T06 | Broken Function Level Authorization | [10_api_security/01-owasp-api-top-risks.md](10_api_security/01-owasp-api-top-risks.md) | TECHNICALLY_REVIEWED |
+| D10-T07 | Server-Side Request Forgery (SSRF) | [10_api_security/02-injection-and-data-exposure.md](10_api_security/02-injection-and-data-exposure.md) | TECHNICALLY_REVIEWED |
+| D10-T08 | Injection attacks | [10_api_security/02-injection-and-data-exposure.md](10_api_security/02-injection-and-data-exposure.md) | TECHNICALLY_REVIEWED |
+| D10-T09 | Mass assignment | [10_api_security/02-injection-and-data-exposure.md](10_api_security/02-injection-and-data-exposure.md) | TECHNICALLY_REVIEWED |
+| D10-T10 | Excessive data exposure | [10_api_security/02-injection-and-data-exposure.md](10_api_security/02-injection-and-data-exposure.md) | TECHNICALLY_REVIEWED |
+| D10-T11 | Input validation and sanitization | [10_api_security/02-injection-and-data-exposure.md](10_api_security/02-injection-and-data-exposure.md) | TECHNICALLY_REVIEWED |
+| D10-T12 | SQL injection prevention | [10_api_security/03-transport-and-file-attacks.md](10_api_security/03-transport-and-file-attacks.md) | TECHNICALLY_REVIEWED |
+| D10-T13 | Path traversal | [10_api_security/03-transport-and-file-attacks.md](10_api_security/03-transport-and-file-attacks.md) | TECHNICALLY_REVIEWED |
+| D10-T14 | File upload validation | [10_api_security/03-transport-and-file-attacks.md](10_api_security/03-transport-and-file-attacks.md) | TECHNICALLY_REVIEWED |
+| D10-T15 | Request smuggling fundamentals | [10_api_security/03-transport-and-file-attacks.md](10_api_security/03-transport-and-file-attacks.md) | TECHNICALLY_REVIEWED |
+| D10-T16 | TLS configuration | [10_api_security/03-transport-and-file-attacks.md](10_api_security/03-transport-and-file-attacks.md) | TECHNICALLY_REVIEWED |
+| D10-T17 | Security headers | [10_api_security/04-headers-secrets-audit-dependencies.md](10_api_security/04-headers-secrets-audit-dependencies.md) | TECHNICALLY_REVIEWED |
+| D10-T18 | Secrets and PII protection | [10_api_security/04-headers-secrets-audit-dependencies.md](10_api_security/04-headers-secrets-audit-dependencies.md) | TECHNICALLY_REVIEWED |
+| D10-T19 | Audit logging | [10_api_security/04-headers-secrets-audit-dependencies.md](10_api_security/04-headers-secrets-audit-dependencies.md) | TECHNICALLY_REVIEWED |
+| D10-T20 | Dependency vulnerability scanning | [10_api_security/04-headers-secrets-audit-dependencies.md](10_api_security/04-headers-secrets-audit-dependencies.md) | TECHNICALLY_REVIEWED |
+
+## Domain 11: API Documentation and Testing
+
+Directory: [11_api_documentation_testing](11_api_documentation_testing/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D11-T01 | OpenAPI Specification | [11_api_documentation_testing/01-openapi-and-contracts.md](11_api_documentation_testing/01-openapi-and-contracts.md) | TECHNICALLY_REVIEWED |
+| D11-T02 | Swagger UI and ReDoc | [11_api_documentation_testing/01-openapi-and-contracts.md](11_api_documentation_testing/01-openapi-and-contracts.md) | TECHNICALLY_REVIEWED |
+| D11-T03 | API contracts | [11_api_documentation_testing/01-openapi-and-contracts.md](11_api_documentation_testing/01-openapi-and-contracts.md) | TECHNICALLY_REVIEWED |
+| D11-T04 | Contract-first API design | [11_api_documentation_testing/01-openapi-and-contracts.md](11_api_documentation_testing/01-openapi-and-contracts.md) | TECHNICALLY_REVIEWED |
+| D11-T05 | Unit testing | [11_api_documentation_testing/02-test-layers-and-clients.md](11_api_documentation_testing/02-test-layers-and-clients.md) | TECHNICALLY_REVIEWED |
+| D11-T06 | Integration testing | [11_api_documentation_testing/02-test-layers-and-clients.md](11_api_documentation_testing/02-test-layers-and-clients.md) | TECHNICALLY_REVIEWED |
+| D11-T07 | End-to-end testing | [11_api_documentation_testing/02-test-layers-and-clients.md](11_api_documentation_testing/02-test-layers-and-clients.md) | TECHNICALLY_REVIEWED |
+| D11-T08 | Contract testing | [11_api_documentation_testing/02-test-layers-and-clients.md](11_api_documentation_testing/02-test-layers-and-clients.md) | TECHNICALLY_REVIEWED |
+| D11-T09 | Mock servers | [11_api_documentation_testing/02-test-layers-and-clients.md](11_api_documentation_testing/02-test-layers-and-clients.md) | TECHNICALLY_REVIEWED |
+| D11-T10 | Postman or equivalent API clients | [11_api_documentation_testing/02-test-layers-and-clients.md](11_api_documentation_testing/02-test-layers-and-clients.md) | TECHNICALLY_REVIEWED |
+| D11-T11 | curl for request testing | [11_api_documentation_testing/02-test-layers-and-clients.md](11_api_documentation_testing/02-test-layers-and-clients.md) | TECHNICALLY_REVIEWED |
+| D11-T12 | Authentication testing | [11_api_documentation_testing/03-negative-load-and-regression.md](11_api_documentation_testing/03-negative-load-and-regression.md) | TECHNICALLY_REVIEWED |
+| D11-T13 | Negative testing | [11_api_documentation_testing/03-negative-load-and-regression.md](11_api_documentation_testing/03-negative-load-and-regression.md) | TECHNICALLY_REVIEWED |
+| D11-T14 | Boundary testing | [11_api_documentation_testing/03-negative-load-and-regression.md](11_api_documentation_testing/03-negative-load-and-regression.md) | TECHNICALLY_REVIEWED |
+| D11-T15 | Load testing | [11_api_documentation_testing/03-negative-load-and-regression.md](11_api_documentation_testing/03-negative-load-and-regression.md) | TECHNICALLY_REVIEWED |
+| D11-T16 | Backward compatibility tests | [11_api_documentation_testing/03-negative-load-and-regression.md](11_api_documentation_testing/03-negative-load-and-regression.md) | TECHNICALLY_REVIEWED |
+| D11-T17 | API regression testing | [11_api_documentation_testing/03-negative-load-and-regression.md](11_api_documentation_testing/03-negative-load-and-regression.md) | TECHNICALLY_REVIEWED |
+
+## Domain 12: FastAPI Fundamentals
+
+Directory: [12_fastapi_fundamentals](12_fastapi_fundamentals/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D12-T01 | What FastAPI is and when to use it | [12_fastapi_fundamentals/01-fastapi-runtime-foundations.md](12_fastapi_fundamentals/01-fastapi-runtime-foundations.md) | TECHNICALLY_REVIEWED |
+| D12-T02 | FastAPI versus Flask versus Django REST Framework | [12_fastapi_fundamentals/01-fastapi-runtime-foundations.md](12_fastapi_fundamentals/01-fastapi-runtime-foundations.md) | TECHNICALLY_REVIEWED |
+| D12-T03 | ASGI versus WSGI | [12_fastapi_fundamentals/01-fastapi-runtime-foundations.md](12_fastapi_fundamentals/01-fastapi-runtime-foundations.md) | TECHNICALLY_REVIEWED |
+| D12-T04 | Starlette and Pydantic roles | [12_fastapi_fundamentals/01-fastapi-runtime-foundations.md](12_fastapi_fundamentals/01-fastapi-runtime-foundations.md) | TECHNICALLY_REVIEWED |
+| D12-T05 | Creating a FastAPI application | [12_fastapi_fundamentals/02-application-process.md](12_fastapi_fundamentals/02-application-process.md) | TECHNICALLY_REVIEWED |
+| D12-T06 | Application entry points | [12_fastapi_fundamentals/02-application-process.md](12_fastapi_fundamentals/02-application-process.md) | TECHNICALLY_REVIEWED |
+| D12-T07 | Uvicorn and ASGI servers | [12_fastapi_fundamentals/02-application-process.md](12_fastapi_fundamentals/02-application-process.md) | TECHNICALLY_REVIEWED |
+| D12-T08 | Development mode and reload | [12_fastapi_fundamentals/02-application-process.md](12_fastapi_fundamentals/02-application-process.md) | TECHNICALLY_REVIEWED |
+| D12-T09 | Application startup and shutdown | [12_fastapi_fundamentals/02-application-process.md](12_fastapi_fundamentals/02-application-process.md) | TECHNICALLY_REVIEWED |
+| D12-T10 | Running the application | [12_fastapi_fundamentals/02-application-process.md](12_fastapi_fundamentals/02-application-process.md) | TECHNICALLY_REVIEWED |
+| D12-T11 | Swagger UI at /docs | [12_fastapi_fundamentals/03-generated-documentation.md](12_fastapi_fundamentals/03-generated-documentation.md) | TECHNICALLY_REVIEWED |
+| D12-T12 | ReDoc at /redoc | [12_fastapi_fundamentals/03-generated-documentation.md](12_fastapi_fundamentals/03-generated-documentation.md) | TECHNICALLY_REVIEWED |
+| D12-T13 | OpenAPI schema generation | [12_fastapi_fundamentals/03-generated-documentation.md](12_fastapi_fundamentals/03-generated-documentation.md) | TECHNICALLY_REVIEWED |
+| D12-T14 | Project structure | [12_fastapi_fundamentals/04-project-layout-and-settings.md](12_fastapi_fundamentals/04-project-layout-and-settings.md) | TECHNICALLY_REVIEWED |
+| D12-T15 | Configuration management | [12_fastapi_fundamentals/04-project-layout-and-settings.md](12_fastapi_fundamentals/04-project-layout-and-settings.md) | TECHNICALLY_REVIEWED |
+| D12-T16 | Environment variables | [12_fastapi_fundamentals/04-project-layout-and-settings.md](12_fastapi_fundamentals/04-project-layout-and-settings.md) | TECHNICALLY_REVIEWED |
+
+## Domain 13: Path, Query, and Request Parameters
+
+Directory: [13_parameters](13_parameters/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D13-T01 | Path parameters | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T02 | Query parameters | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T03 | Required and optional parameters | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T04 | Default values | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T05 | Parameter types | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T06 | Type conversion | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T07 | Numeric constraints | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T08 | String constraints | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T09 | Enum parameters | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T10 | Lists and repeated query parameters | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T11 | Boolean query parameters | [13_parameters/01-path-query-and-constraints.md](13_parameters/01-path-query-and-constraints.md) | TECHNICALLY_REVIEWED |
+| D13-T12 | Aliases | [13_parameters/02-aliases-headers-cookies-models.md](13_parameters/02-aliases-headers-cookies-models.md) | TECHNICALLY_REVIEWED |
+| D13-T13 | Parameter metadata | [13_parameters/02-aliases-headers-cookies-models.md](13_parameters/02-aliases-headers-cookies-models.md) | TECHNICALLY_REVIEWED |
+| D13-T14 | Header parameters | [13_parameters/02-aliases-headers-cookies-models.md](13_parameters/02-aliases-headers-cookies-models.md) | TECHNICALLY_REVIEWED |
+| D13-T15 | Cookie parameters | [13_parameters/02-aliases-headers-cookies-models.md](13_parameters/02-aliases-headers-cookies-models.md) | TECHNICALLY_REVIEWED |
+| D13-T16 | Query parameter models | [13_parameters/02-aliases-headers-cookies-models.md](13_parameters/02-aliases-headers-cookies-models.md) | TECHNICALLY_REVIEWED |
+| D13-T17 | Path parameter validation | [13_parameters/02-aliases-headers-cookies-models.md](13_parameters/02-aliases-headers-cookies-models.md) | TECHNICALLY_REVIEWED |
+| D13-T18 | Validation error responses | [13_parameters/03-validation-error-responses.md](13_parameters/03-validation-error-responses.md) | TECHNICALLY_REVIEWED |
+
+## Domain 14: Request Bodies and Pydantic
+
+Directory: [14_pydantic_request_models](14_pydantic_request_models/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D14-T01 | Pydantic BaseModel | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T02 | Request body validation | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T03 | Response models | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T04 | Nested models | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T05 | Lists and dictionaries | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T06 | Optional fields | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T07 | Nullable fields | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T08 | Required fields versus default values | [14_pydantic_request_models/01-models-and-field-design.md](14_pydantic_request_models/01-models-and-field-design.md) | TECHNICALLY_REVIEWED |
+| D14-T09 | Field validators | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T10 | Model validators | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T11 | Custom validation | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T12 | Field constraints | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T13 | Enums and literals | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T14 | Reusable schemas | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T15 | Model inheritance | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T16 | Generic models | [14_pydantic_request_models/02-validators-constraints-reuse.md](14_pydantic_request_models/02-validators-constraints-reuse.md) | TECHNICALLY_REVIEWED |
+| D14-T17 | Serialization and deserialization | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T18 | JSON serialization | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T19 | model_dump() and model_validate() | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T20 | Pydantic v2 validation concepts | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T21 | Extra-field handling | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T22 | Aliases and serialization aliases | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T23 | Computed fields | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T24 | Custom types | [14_pydantic_request_models/03-serialization-and-v2.md](14_pydantic_request_models/03-serialization-and-v2.md) | TECHNICALLY_REVIEWED |
+| D14-T25 | Pydantic Settings | [14_pydantic_request_models/04-settings-schema-strictness.md](14_pydantic_request_models/04-settings-schema-strictness.md) | TECHNICALLY_REVIEWED |
+| D14-T26 | Schema generation | [14_pydantic_request_models/04-settings-schema-strictness.md](14_pydantic_request_models/04-settings-schema-strictness.md) | TECHNICALLY_REVIEWED |
+| D14-T27 | Strict validation | [14_pydantic_request_models/04-settings-schema-strictness.md](14_pydantic_request_models/04-settings-schema-strictness.md) | TECHNICALLY_REVIEWED |
+| D14-T28 | Validation error customization | [14_pydantic_request_models/04-settings-schema-strictness.md](14_pydantic_request_models/04-settings-schema-strictness.md) | TECHNICALLY_REVIEWED |
+
+## Domain 15: Routing and Application Structure
+
+Directory: [15_routing_architecture](15_routing_architecture/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D15-T01 | APIRouter | [15_routing_architecture/01-routers-and-modules.md](15_routing_architecture/01-routers-and-modules.md) | TECHNICALLY_REVIEWED |
+| D15-T02 | Route registration | [15_routing_architecture/01-routers-and-modules.md](15_routing_architecture/01-routers-and-modules.md) | TECHNICALLY_REVIEWED |
+| D15-T03 | Router prefixes | [15_routing_architecture/01-routers-and-modules.md](15_routing_architecture/01-routers-and-modules.md) | TECHNICALLY_REVIEWED |
+| D15-T04 | Tags and endpoint metadata | [15_routing_architecture/01-routers-and-modules.md](15_routing_architecture/01-routers-and-modules.md) | TECHNICALLY_REVIEWED |
+| D15-T05 | Router dependencies | [15_routing_architecture/01-routers-and-modules.md](15_routing_architecture/01-routers-and-modules.md) | TECHNICALLY_REVIEWED |
+| D15-T06 | Modular application design | [15_routing_architecture/01-routers-and-modules.md](15_routing_architecture/01-routers-and-modules.md) | TECHNICALLY_REVIEWED |
+| D15-T07 | Splitting routers by domain | [15_routing_architecture/01-routers-and-modules.md](15_routing_architecture/01-routers-and-modules.md) | TECHNICALLY_REVIEWED |
+| D15-T08 | Service layer | [15_routing_architecture/02-layers-and-factories.md](15_routing_architecture/02-layers-and-factories.md) | TECHNICALLY_REVIEWED |
+| D15-T09 | Repository layer | [15_routing_architecture/02-layers-and-factories.md](15_routing_architecture/02-layers-and-factories.md) | TECHNICALLY_REVIEWED |
+| D15-T10 | Business logic separation | [15_routing_architecture/02-layers-and-factories.md](15_routing_architecture/02-layers-and-factories.md) | TECHNICALLY_REVIEWED |
+| D15-T11 | Dependency inversion | [15_routing_architecture/02-layers-and-factories.md](15_routing_architecture/02-layers-and-factories.md) | TECHNICALLY_REVIEWED |
+| D15-T12 | Application factories | [15_routing_architecture/02-layers-and-factories.md](15_routing_architecture/02-layers-and-factories.md) | TECHNICALLY_REVIEWED |
+| D15-T13 | Shared application state | [15_routing_architecture/02-layers-and-factories.md](15_routing_architecture/02-layers-and-factories.md) | TECHNICALLY_REVIEWED |
+| D15-T14 | Route naming | [15_routing_architecture/03-route-identity-and-versioning.md](15_routing_architecture/03-route-identity-and-versioning.md) | TECHNICALLY_REVIEWED |
+| D15-T15 | Route ordering and path conflicts | [15_routing_architecture/03-route-identity-and-versioning.md](15_routing_architecture/03-route-identity-and-versioning.md) | TECHNICALLY_REVIEWED |
+| D15-T16 | API versioning | [15_routing_architecture/03-route-identity-and-versioning.md](15_routing_architecture/03-route-identity-and-versioning.md) | TECHNICALLY_REVIEWED |
+| D15-T17 | Internal versus public endpoints | [15_routing_architecture/03-route-identity-and-versioning.md](15_routing_architecture/03-route-identity-and-versioning.md) | TECHNICALLY_REVIEWED |
+
+## Domain 16: Dependency Injection
+
+Directory: [16_dependency_injection](16_dependency_injection/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D16-T01 | Depends() | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T02 | Dependency functions | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T03 | Dependency classes | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T04 | Nested dependencies | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T05 | Shared dependencies | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T06 | Request-scoped resources | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T07 | Database session dependencies | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T08 | Authentication dependencies | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T09 | Authorization dependencies | [16_dependency_injection/01-depends-and-scopes.md](16_dependency_injection/01-depends-and-scopes.md) | TECHNICALLY_REVIEWED |
+| D16-T10 | Dependency caching within a request | [16_dependency_injection/02-yield-overrides-and-order.md](16_dependency_injection/02-yield-overrides-and-order.md) | TECHNICALLY_REVIEWED |
+| D16-T11 | Dependencies with yield | [16_dependency_injection/02-yield-overrides-and-order.md](16_dependency_injection/02-yield-overrides-and-order.md) | TECHNICALLY_REVIEWED |
+| D16-T12 | Resource cleanup | [16_dependency_injection/02-yield-overrides-and-order.md](16_dependency_injection/02-yield-overrides-and-order.md) | TECHNICALLY_REVIEWED |
+| D16-T13 | Dependency overrides in tests | [16_dependency_injection/02-yield-overrides-and-order.md](16_dependency_injection/02-yield-overrides-and-order.md) | TECHNICALLY_REVIEWED |
+| D16-T14 | Application-wide dependencies | [16_dependency_injection/02-yield-overrides-and-order.md](16_dependency_injection/02-yield-overrides-and-order.md) | TECHNICALLY_REVIEWED |
+| D16-T15 | Router-level dependencies | [16_dependency_injection/02-yield-overrides-and-order.md](16_dependency_injection/02-yield-overrides-and-order.md) | TECHNICALLY_REVIEWED |
+| D16-T16 | Dependency execution order | [16_dependency_injection/02-yield-overrides-and-order.md](16_dependency_injection/02-yield-overrides-and-order.md) | TECHNICALLY_REVIEWED |
+| D16-T17 | Async dependencies | [16_dependency_injection/03-async-dependencies-vs-locators.md](16_dependency_injection/03-async-dependencies-vs-locators.md) | TECHNICALLY_REVIEWED |
+| D16-T18 | Dependency injection versus service locators | [16_dependency_injection/03-async-dependencies-vs-locators.md](16_dependency_injection/03-async-dependencies-vs-locators.md) | TECHNICALLY_REVIEWED |
+
+## Domain 17: Request Lifecycle and Middleware
+
+Directory: [17_middleware_request_lifecycle](17_middleware_request_lifecycle/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D17-T01 | ASGI request lifecycle | [17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md](17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T02 | Routing and endpoint execution | [17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md](17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T03 | Middleware execution order | [17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md](17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T04 | Custom middleware | [17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md](17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T05 | Request and response middleware | [17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md](17_middleware_request_lifecycle/01-asgi-lifecycle-and-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T06 | Request IDs and correlation IDs | [17_middleware_request_lifecycle/02-operational-middleware.md](17_middleware_request_lifecycle/02-operational-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T07 | Timing middleware | [17_middleware_request_lifecycle/02-operational-middleware.md](17_middleware_request_lifecycle/02-operational-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T08 | Logging middleware | [17_middleware_request_lifecycle/02-operational-middleware.md](17_middleware_request_lifecycle/02-operational-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T09 | CORS middleware | [17_middleware_request_lifecycle/02-operational-middleware.md](17_middleware_request_lifecycle/02-operational-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T10 | Trusted host middleware | [17_middleware_request_lifecycle/02-operational-middleware.md](17_middleware_request_lifecycle/02-operational-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T11 | HTTPS redirects | [17_middleware_request_lifecycle/02-operational-middleware.md](17_middleware_request_lifecycle/02-operational-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T12 | Exception middleware | [17_middleware_request_lifecycle/02-operational-middleware.md](17_middleware_request_lifecycle/02-operational-middleware.md) | TECHNICALLY_REVIEWED |
+| D17-T13 | Middleware versus dependencies | [17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md](17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md) | TECHNICALLY_REVIEWED |
+| D17-T14 | Pure ASGI middleware versus decorator-style middleware | [17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md](17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md) | TECHNICALLY_REVIEWED |
+| D17-T15 | Context propagation | [17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md](17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md) | TECHNICALLY_REVIEWED |
+| D17-T16 | Request-scoped context | [17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md](17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md) | TECHNICALLY_REVIEWED |
+| D17-T17 | Middleware performance overhead | [17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md](17_middleware_request_lifecycle/03-middleware-design-tradeoffs.md) | TECHNICALLY_REVIEWED |
+
+## Domain 18: Response Handling
+
+Directory: [18_response_handling](18_response_handling/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D18-T01 | Automatic response serialization | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T02 | response_model | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T03 | status_code | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T04 | JSONResponse | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T05 | Response | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T06 | RedirectResponse | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T07 | HTMLResponse | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T08 | PlainTextResponse | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T09 | StreamingResponse | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T10 | FileResponse | [18_response_handling/01-response-classes.md](18_response_handling/01-response-classes.md) | TECHNICALLY_REVIEWED |
+| D18-T11 | Response headers | [18_response_handling/02-headers-cookies-and-filtering.md](18_response_handling/02-headers-cookies-and-filtering.md) | TECHNICALLY_REVIEWED |
+| D18-T12 | Cookies and cookie security | [18_response_handling/02-headers-cookies-and-filtering.md](18_response_handling/02-headers-cookies-and-filtering.md) | TECHNICALLY_REVIEWED |
+| D18-T13 | Response status codes | [18_response_handling/02-headers-cookies-and-filtering.md](18_response_handling/02-headers-cookies-and-filtering.md) | TECHNICALLY_REVIEWED |
+| D18-T14 | Response model filtering | [18_response_handling/02-headers-cookies-and-filtering.md](18_response_handling/02-headers-cookies-and-filtering.md) | TECHNICALLY_REVIEWED |
+| D18-T15 | Excluding fields from output | [18_response_handling/02-headers-cookies-and-filtering.md](18_response_handling/02-headers-cookies-and-filtering.md) | TECHNICALLY_REVIEWED |
+| D18-T16 | Custom response classes | [18_response_handling/02-headers-cookies-and-filtering.md](18_response_handling/02-headers-cookies-and-filtering.md) | TECHNICALLY_REVIEWED |
+| D18-T17 | Response serialization performance | [18_response_handling/03-performance-orm-and-streaming.md](18_response_handling/03-performance-orm-and-streaming.md) | TECHNICALLY_REVIEWED |
+| D18-T18 | Returning ORM objects safely | [18_response_handling/03-performance-orm-and-streaming.md](18_response_handling/03-performance-orm-and-streaming.md) | TECHNICALLY_REVIEWED |
+| D18-T19 | Streaming large responses | [18_response_handling/03-performance-orm-and-streaming.md](18_response_handling/03-performance-orm-and-streaming.md) | TECHNICALLY_REVIEWED |
+
+## Domain 19: Error Handling and Validation
+
+Directory: [19_error_handling](19_error_handling/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D19-T01 | HTTPException | [19_error_handling/01-exceptions-and-handlers.md](19_error_handling/01-exceptions-and-handlers.md) | TECHNICALLY_REVIEWED |
+| D19-T02 | Request validation errors | [19_error_handling/01-exceptions-and-handlers.md](19_error_handling/01-exceptions-and-handlers.md) | TECHNICALLY_REVIEWED |
+| D19-T03 | Custom exception classes | [19_error_handling/01-exceptions-and-handlers.md](19_error_handling/01-exceptions-and-handlers.md) | TECHNICALLY_REVIEWED |
+| D19-T04 | Global exception handlers | [19_error_handling/01-exceptions-and-handlers.md](19_error_handling/01-exceptions-and-handlers.md) | TECHNICALLY_REVIEWED |
+| D19-T05 | RequestValidationError | [19_error_handling/01-exceptions-and-handlers.md](19_error_handling/01-exceptions-and-handlers.md) | TECHNICALLY_REVIEWED |
+| D19-T06 | Domain exceptions | [19_error_handling/01-exceptions-and-handlers.md](19_error_handling/01-exceptions-and-handlers.md) | TECHNICALLY_REVIEWED |
+| D19-T07 | Database exception mapping | [19_error_handling/01-exceptions-and-handlers.md](19_error_handling/01-exceptions-and-handlers.md) | TECHNICALLY_REVIEWED |
+| D19-T08 | Consistent error schemas | [19_error_handling/02-error-contracts-and-leakage.md](19_error_handling/02-error-contracts-and-leakage.md) | TECHNICALLY_REVIEWED |
+| D19-T09 | Error codes and trace IDs | [19_error_handling/02-error-contracts-and-leakage.md](19_error_handling/02-error-contracts-and-leakage.md) | TECHNICALLY_REVIEWED |
+| D19-T10 | Correct HTTP status code selection | [19_error_handling/02-error-contracts-and-leakage.md](19_error_handling/02-error-contracts-and-leakage.md) | TECHNICALLY_REVIEWED |
+| D19-T11 | Avoiding internal stack-trace leakage | [19_error_handling/02-error-contracts-and-leakage.md](19_error_handling/02-error-contracts-and-leakage.md) | TECHNICALLY_REVIEWED |
+| D19-T12 | Logging exceptions | [19_error_handling/02-error-contracts-and-leakage.md](19_error_handling/02-error-contracts-and-leakage.md) | TECHNICALLY_REVIEWED |
+| D19-T13 | Handling unexpected exceptions | [19_error_handling/02-error-contracts-and-leakage.md](19_error_handling/02-error-contracts-and-leakage.md) | TECHNICALLY_REVIEWED |
+| D19-T14 | Error handling in background tasks | [19_error_handling/03-errors-outside-the-request.md](19_error_handling/03-errors-outside-the-request.md) | TECHNICALLY_REVIEWED |
+| D19-T15 | Error handling in asynchronous workflows | [19_error_handling/03-errors-outside-the-request.md](19_error_handling/03-errors-outside-the-request.md) | TECHNICALLY_REVIEWED |
+
+## Domain 20: Authentication and Authorization in FastAPI
+
+Directory: [20_fastapi_authentication](20_fastapi_authentication/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D20-T01 | OAuth2PasswordBearer | [20_fastapi_authentication/01-security-schemes.md](20_fastapi_authentication/01-security-schemes.md) | TECHNICALLY_REVIEWED |
+| D20-T02 | OAuth2PasswordRequestForm | [20_fastapi_authentication/01-security-schemes.md](20_fastapi_authentication/01-security-schemes.md) | TECHNICALLY_REVIEWED |
+| D20-T03 | HTTP Bearer authentication | [20_fastapi_authentication/01-security-schemes.md](20_fastapi_authentication/01-security-schemes.md) | TECHNICALLY_REVIEWED |
+| D20-T04 | API key security schemes | [20_fastapi_authentication/01-security-schemes.md](20_fastapi_authentication/01-security-schemes.md) | TECHNICALLY_REVIEWED |
+| D20-T05 | Basic authentication | [20_fastapi_authentication/01-security-schemes.md](20_fastapi_authentication/01-security-schemes.md) | TECHNICALLY_REVIEWED |
+| D20-T06 | JWT creation and verification | [20_fastapi_authentication/02-jwt-passwords-and-current-user.md](20_fastapi_authentication/02-jwt-passwords-and-current-user.md) | TECHNICALLY_REVIEWED |
+| D20-T07 | Password hashing | [20_fastapi_authentication/02-jwt-passwords-and-current-user.md](20_fastapi_authentication/02-jwt-passwords-and-current-user.md) | TECHNICALLY_REVIEWED |
+| D20-T08 | Access-token expiry | [20_fastapi_authentication/02-jwt-passwords-and-current-user.md](20_fastapi_authentication/02-jwt-passwords-and-current-user.md) | TECHNICALLY_REVIEWED |
+| D20-T09 | Refresh-token strategies | [20_fastapi_authentication/02-jwt-passwords-and-current-user.md](20_fastapi_authentication/02-jwt-passwords-and-current-user.md) | TECHNICALLY_REVIEWED |
+| D20-T10 | Current-user dependencies | [20_fastapi_authentication/02-jwt-passwords-and-current-user.md](20_fastapi_authentication/02-jwt-passwords-and-current-user.md) | TECHNICALLY_REVIEWED |
+| D20-T11 | Role-based authorization | [20_fastapi_authentication/03-authorization-enforcement.md](20_fastapi_authentication/03-authorization-enforcement.md) | TECHNICALLY_REVIEWED |
+| D20-T12 | Scope-based authorization | [20_fastapi_authentication/03-authorization-enforcement.md](20_fastapi_authentication/03-authorization-enforcement.md) | TECHNICALLY_REVIEWED |
+| D20-T13 | Resource ownership checks | [20_fastapi_authentication/03-authorization-enforcement.md](20_fastapi_authentication/03-authorization-enforcement.md) | TECHNICALLY_REVIEWED |
+| D20-T14 | Multi-tenant authorization | [20_fastapi_authentication/03-authorization-enforcement.md](20_fastapi_authentication/03-authorization-enforcement.md) | TECHNICALLY_REVIEWED |
+| D20-T15 | Cookie-based authentication | [20_fastapi_authentication/03-authorization-enforcement.md](20_fastapi_authentication/03-authorization-enforcement.md) | TECHNICALLY_REVIEWED |
+| D20-T16 | OAuth 2.0 authorization flows | [20_fastapi_authentication/03-authorization-enforcement.md](20_fastapi_authentication/03-authorization-enforcement.md) | TECHNICALLY_REVIEWED |
+| D20-T17 | OpenID Connect integration | [20_fastapi_authentication/03-authorization-enforcement.md](20_fastapi_authentication/03-authorization-enforcement.md) | TECHNICALLY_REVIEWED |
+| D20-T18 | Security scheme declarations in OpenAPI | [20_fastapi_authentication/04-openapi-and-auth-tests.md](20_fastapi_authentication/04-openapi-and-auth-tests.md) | TECHNICALLY_REVIEWED |
+| D20-T19 | Authentication testing | [20_fastapi_authentication/04-openapi-and-auth-tests.md](20_fastapi_authentication/04-openapi-and-auth-tests.md) | TECHNICALLY_REVIEWED |
+| D20-T20 | Authorization failure handling | [20_fastapi_authentication/04-openapi-and-auth-tests.md](20_fastapi_authentication/04-openapi-and-auth-tests.md) | TECHNICALLY_REVIEWED |
+
+## Domain 21: Async Programming and Concurrency
+
+Directory: [21_async_concurrency](21_async_concurrency/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D21-T01 | async def versus def endpoints | [21_async_concurrency/01-asyncio-model.md](21_async_concurrency/01-asyncio-model.md) | TECHNICALLY_REVIEWED |
+| D21-T02 | asyncio fundamentals | [21_async_concurrency/01-asyncio-model.md](21_async_concurrency/01-asyncio-model.md) | TECHNICALLY_REVIEWED |
+| D21-T03 | Event loop | [21_async_concurrency/01-asyncio-model.md](21_async_concurrency/01-asyncio-model.md) | TECHNICALLY_REVIEWED |
+| D21-T04 | Coroutines and tasks | [21_async_concurrency/01-asyncio-model.md](21_async_concurrency/01-asyncio-model.md) | TECHNICALLY_REVIEWED |
+| D21-T05 | Awaitables | [21_async_concurrency/01-asyncio-model.md](21_async_concurrency/01-asyncio-model.md) | TECHNICALLY_REVIEWED |
+| D21-T06 | Blocking versus non-blocking I/O | [21_async_concurrency/02-blocking-and-offload.md](21_async_concurrency/02-blocking-and-offload.md) | TECHNICALLY_REVIEWED |
+| D21-T07 | Async HTTP clients | [21_async_concurrency/02-blocking-and-offload.md](21_async_concurrency/02-blocking-and-offload.md) | TECHNICALLY_REVIEWED |
+| D21-T08 | Async database drivers | [21_async_concurrency/02-blocking-and-offload.md](21_async_concurrency/02-blocking-and-offload.md) | TECHNICALLY_REVIEWED |
+| D21-T09 | Concurrency versus parallelism | [21_async_concurrency/02-blocking-and-offload.md](21_async_concurrency/02-blocking-and-offload.md) | TECHNICALLY_REVIEWED |
+| D21-T10 | Thread pools | [21_async_concurrency/02-blocking-and-offload.md](21_async_concurrency/02-blocking-and-offload.md) | TECHNICALLY_REVIEWED |
+| D21-T11 | CPU-bound versus I/O-bound workloads | [21_async_concurrency/02-blocking-and-offload.md](21_async_concurrency/02-blocking-and-offload.md) | TECHNICALLY_REVIEWED |
+| D21-T12 | Thread and process offloading | [21_async_concurrency/02-blocking-and-offload.md](21_async_concurrency/02-blocking-and-offload.md) | TECHNICALLY_REVIEWED |
+| D21-T13 | Cancellation and timeouts | [21_async_concurrency/03-cancellation-limits-contexts.md](21_async_concurrency/03-cancellation-limits-contexts.md) | TECHNICALLY_REVIEWED |
+| D21-T14 | Async locks and semaphores | [21_async_concurrency/03-cancellation-limits-contexts.md](21_async_concurrency/03-cancellation-limits-contexts.md) | TECHNICALLY_REVIEWED |
+| D21-T15 | Connection pool limits | [21_async_concurrency/03-cancellation-limits-contexts.md](21_async_concurrency/03-cancellation-limits-contexts.md) | TECHNICALLY_REVIEWED |
+| D21-T16 | Async context managers | [21_async_concurrency/03-cancellation-limits-contexts.md](21_async_concurrency/03-cancellation-limits-contexts.md) | TECHNICALLY_REVIEWED |
+| D21-T17 | Background task execution | [21_async_concurrency/04-races-backpressure-cleanup.md](21_async_concurrency/04-races-backpressure-cleanup.md) | TECHNICALLY_REVIEWED |
+| D21-T18 | Deadlocks and race conditions | [21_async_concurrency/04-races-backpressure-cleanup.md](21_async_concurrency/04-races-backpressure-cleanup.md) | TECHNICALLY_REVIEWED |
+| D21-T19 | Backpressure | [21_async_concurrency/04-races-backpressure-cleanup.md](21_async_concurrency/04-races-backpressure-cleanup.md) | TECHNICALLY_REVIEWED |
+| D21-T20 | Async resource cleanup | [21_async_concurrency/04-races-backpressure-cleanup.md](21_async_concurrency/04-races-backpressure-cleanup.md) | TECHNICALLY_REVIEWED |
+| D21-T21 | Common event-loop blocking mistakes | [21_async_concurrency/04-races-backpressure-cleanup.md](21_async_concurrency/04-races-backpressure-cleanup.md) | TECHNICALLY_REVIEWED |
+
+## Domain 22: Database Integration
+
+Directory: [22_database_integration](22_database_integration/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D22-T01 | SQLAlchemy ORM | [22_database_integration/01-sqlalchemy-and-sessions.md](22_database_integration/01-sqlalchemy-and-sessions.md) | TECHNICALLY_REVIEWED |
+| D22-T02 | SQLAlchemy Core | [22_database_integration/01-sqlalchemy-and-sessions.md](22_database_integration/01-sqlalchemy-and-sessions.md) | TECHNICALLY_REVIEWED |
+| D22-T03 | Synchronous database sessions | [22_database_integration/01-sqlalchemy-and-sessions.md](22_database_integration/01-sqlalchemy-and-sessions.md) | TECHNICALLY_REVIEWED |
+| D22-T04 | Asynchronous database sessions | [22_database_integration/01-sqlalchemy-and-sessions.md](22_database_integration/01-sqlalchemy-and-sessions.md) | TECHNICALLY_REVIEWED |
+| D22-T05 | PostgreSQL integration | [22_database_integration/01-sqlalchemy-and-sessions.md](22_database_integration/01-sqlalchemy-and-sessions.md) | TECHNICALLY_REVIEWED |
+| D22-T06 | SQLite for lightweight examples | [22_database_integration/01-sqlalchemy-and-sessions.md](22_database_integration/01-sqlalchemy-and-sessions.md) | TECHNICALLY_REVIEWED |
+| D22-T07 | Connection pooling | [22_database_integration/01-sqlalchemy-and-sessions.md](22_database_integration/01-sqlalchemy-and-sessions.md) | TECHNICALLY_REVIEWED |
+| D22-T08 | Session lifecycle | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T09 | Session dependency with yield | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T10 | CRUD operations | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T11 | Transactions and rollback | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T12 | Database constraints | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T13 | Indexing and query optimization | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T14 | Relationship loading | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T15 | N+1 queries | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T16 | Pagination | [22_database_integration/02-transactions-queries-pagination.md](22_database_integration/02-transactions-queries-pagination.md) | TECHNICALLY_REVIEWED |
+| D22-T17 | Alembic migrations | [22_database_integration/03-migrations-isolation-and-tests.md](22_database_integration/03-migrations-isolation-and-tests.md) | TECHNICALLY_REVIEWED |
+| D22-T18 | Repository pattern | [22_database_integration/03-migrations-isolation-and-tests.md](22_database_integration/03-migrations-isolation-and-tests.md) | TECHNICALLY_REVIEWED |
+| D22-T19 | Database isolation levels | [22_database_integration/03-migrations-isolation-and-tests.md](22_database_integration/03-migrations-isolation-and-tests.md) | TECHNICALLY_REVIEWED |
+| D22-T20 | Optimistic concurrency | [22_database_integration/03-migrations-isolation-and-tests.md](22_database_integration/03-migrations-isolation-and-tests.md) | TECHNICALLY_REVIEWED |
+| D22-T21 | Handling database errors | [22_database_integration/03-migrations-isolation-and-tests.md](22_database_integration/03-migrations-isolation-and-tests.md) | TECHNICALLY_REVIEWED |
+| D22-T22 | Avoiding connection leaks | [22_database_integration/03-migrations-isolation-and-tests.md](22_database_integration/03-migrations-isolation-and-tests.md) | TECHNICALLY_REVIEWED |
+| D22-T23 | Database testing and test isolation | [22_database_integration/03-migrations-isolation-and-tests.md](22_database_integration/03-migrations-isolation-and-tests.md) | TECHNICALLY_REVIEWED |
+
+## Domain 23: File Uploads and Downloads
+
+Directory: [23_file_uploads](23_file_uploads/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D23-T01 | UploadFile | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T02 | File() | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T03 | Form() | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T04 | Multipart form data | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T05 | File size limits | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T06 | MIME-type validation | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T07 | File signature validation | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T08 | Streaming file uploads | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T09 | Temporary file management | [23_file_uploads/01-receiving-uploads.md](23_file_uploads/01-receiving-uploads.md) | TECHNICALLY_REVIEWED |
+| D23-T10 | Secure filename handling | [23_file_uploads/02-safe-storage-and-downloads.md](23_file_uploads/02-safe-storage-and-downloads.md) | TECHNICALLY_REVIEWED |
+| D23-T11 | Path traversal prevention | [23_file_uploads/02-safe-storage-and-downloads.md](23_file_uploads/02-safe-storage-and-downloads.md) | TECHNICALLY_REVIEWED |
+| D23-T12 | File downloads | [23_file_uploads/02-safe-storage-and-downloads.md](23_file_uploads/02-safe-storage-and-downloads.md) | TECHNICALLY_REVIEWED |
+| D23-T13 | FileResponse | [23_file_uploads/02-safe-storage-and-downloads.md](23_file_uploads/02-safe-storage-and-downloads.md) | TECHNICALLY_REVIEWED |
+| D23-T14 | StreamingResponse | [23_file_uploads/02-safe-storage-and-downloads.md](23_file_uploads/02-safe-storage-and-downloads.md) | TECHNICALLY_REVIEWED |
+| D23-T15 | Object storage integration | [23_file_uploads/03-object-storage-and-workers.md](23_file_uploads/03-object-storage-and-workers.md) | TECHNICALLY_REVIEWED |
+| D23-T16 | Presigned upload and download URLs | [23_file_uploads/03-object-storage-and-workers.md](23_file_uploads/03-object-storage-and-workers.md) | TECHNICALLY_REVIEWED |
+| D23-T17 | Large file handling | [23_file_uploads/03-object-storage-and-workers.md](23_file_uploads/03-object-storage-and-workers.md) | TECHNICALLY_REVIEWED |
+| D23-T18 | File processing in background workers | [23_file_uploads/03-object-storage-and-workers.md](23_file_uploads/03-object-storage-and-workers.md) | TECHNICALLY_REVIEWED |
+
+## Domain 24: Background Tasks and Long-Running Jobs
+
+Directory: [24_background_jobs](24_background_jobs/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D24-T01 | FastAPI BackgroundTasks | [24_background_jobs/01-backgroundtasks-and-queues.md](24_background_jobs/01-backgroundtasks-and-queues.md) | TECHNICALLY_REVIEWED |
+| D24-T02 | Appropriate uses and limitations | [24_background_jobs/01-backgroundtasks-and-queues.md](24_background_jobs/01-backgroundtasks-and-queues.md) | TECHNICALLY_REVIEWED |
+| D24-T03 | Background task error handling | [24_background_jobs/01-backgroundtasks-and-queues.md](24_background_jobs/01-backgroundtasks-and-queues.md) | TECHNICALLY_REVIEWED |
+| D24-T04 | In-process versus external task queues | [24_background_jobs/01-backgroundtasks-and-queues.md](24_background_jobs/01-backgroundtasks-and-queues.md) | TECHNICALLY_REVIEWED |
+| D24-T05 | Celery, RQ, or equivalent workers | [24_background_jobs/01-backgroundtasks-and-queues.md](24_background_jobs/01-backgroundtasks-and-queues.md) | TECHNICALLY_REVIEWED |
+| D24-T06 | Redis and RabbitMQ integration | [24_background_jobs/01-backgroundtasks-and-queues.md](24_background_jobs/01-backgroundtasks-and-queues.md) | TECHNICALLY_REVIEWED |
+| D24-T07 | Kafka-based asynchronous workflows | [24_background_jobs/01-backgroundtasks-and-queues.md](24_background_jobs/01-backgroundtasks-and-queues.md) | TECHNICALLY_REVIEWED |
+| D24-T08 | Job status tracking | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T09 | Job IDs and polling endpoints | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T10 | Retry policies | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T11 | Dead-letter queues | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T12 | Idempotent jobs | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T13 | Job cancellation | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T14 | Durable task execution | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T15 | Scheduled jobs | [24_background_jobs/02-job-lifecycle.md](24_background_jobs/02-job-lifecycle.md) | TECHNICALLY_REVIEWED |
+| D24-T16 | Distributed task processing | [24_background_jobs/03-workers-in-production.md](24_background_jobs/03-workers-in-production.md) | TECHNICALLY_REVIEWED |
+| D24-T17 | Worker health checks | [24_background_jobs/03-workers-in-production.md](24_background_jobs/03-workers-in-production.md) | TECHNICALLY_REVIEWED |
+| D24-T18 | Graceful worker shutdown | [24_background_jobs/03-workers-in-production.md](24_background_jobs/03-workers-in-production.md) | TECHNICALLY_REVIEWED |
+
+## Domain 25: Advanced FastAPI Features
+
+Directory: [25_advanced_fastapi](25_advanced_fastapi/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D25-T01 | Lifespan context managers | [25_advanced_fastapi/01-lifespan.md](25_advanced_fastapi/01-lifespan.md) | TECHNICALLY_REVIEWED |
+| D25-T02 | Application startup resource initialization | [25_advanced_fastapi/01-lifespan.md](25_advanced_fastapi/01-lifespan.md) | TECHNICALLY_REVIEWED |
+| D25-T03 | Resource cleanup | [25_advanced_fastapi/01-lifespan.md](25_advanced_fastapi/01-lifespan.md) | TECHNICALLY_REVIEWED |
+| D25-T04 | WebSockets | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T05 | Server-Sent Events | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T06 | Streaming HTTP responses | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T07 | Custom OpenAPI generation | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T08 | Custom API documentation | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T09 | Mounted sub-applications | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T10 | Static files | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T11 | WebSocket authentication | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T12 | Async generators | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T13 | Request body streaming considerations | [25_advanced_fastapi/02-streams-sockets-and-mounts.md](25_advanced_fastapi/02-streams-sockets-and-mounts.md) | TECHNICALLY_REVIEWED |
+| D25-T14 | Custom route classes | [25_advanced_fastapi/03-custom-routes-and-probes.md](25_advanced_fastapi/03-custom-routes-and-probes.md) | TECHNICALLY_REVIEWED |
+| D25-T15 | Custom request and response handling | [25_advanced_fastapi/03-custom-routes-and-probes.md](25_advanced_fastapi/03-custom-routes-and-probes.md) | TECHNICALLY_REVIEWED |
+| D25-T16 | File responses | [25_advanced_fastapi/03-custom-routes-and-probes.md](25_advanced_fastapi/03-custom-routes-and-probes.md) | TECHNICALLY_REVIEWED |
+| D25-T17 | GraphQL integration when appropriate | [25_advanced_fastapi/03-custom-routes-and-probes.md](25_advanced_fastapi/03-custom-routes-and-probes.md) | TECHNICALLY_REVIEWED |
+| D25-T18 | Health, readiness, and liveness endpoints | [25_advanced_fastapi/03-custom-routes-and-probes.md](25_advanced_fastapi/03-custom-routes-and-probes.md) | TECHNICALLY_REVIEWED |
+
+## Domain 26: Testing FastAPI Applications
+
+Directory: [26_fastapi_testing](26_fastapi_testing/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D26-T01 | TestClient | [26_fastapi_testing/01-pytest-and-testclient.md](26_fastapi_testing/01-pytest-and-testclient.md) | TECHNICALLY_REVIEWED |
+| D26-T02 | Pytest fundamentals | [26_fastapi_testing/01-pytest-and-testclient.md](26_fastapi_testing/01-pytest-and-testclient.md) | TECHNICALLY_REVIEWED |
+| D26-T03 | Unit tests for business logic | [26_fastapi_testing/01-pytest-and-testclient.md](26_fastapi_testing/01-pytest-and-testclient.md) | TECHNICALLY_REVIEWED |
+| D26-T04 | Endpoint integration tests | [26_fastapi_testing/01-pytest-and-testclient.md](26_fastapi_testing/01-pytest-and-testclient.md) | TECHNICALLY_REVIEWED |
+| D26-T05 | Async tests with AnyIO or compatible tooling | [26_fastapi_testing/01-pytest-and-testclient.md](26_fastapi_testing/01-pytest-and-testclient.md) | TECHNICALLY_REVIEWED |
+| D26-T06 | Dependency overrides | [26_fastapi_testing/01-pytest-and-testclient.md](26_fastapi_testing/01-pytest-and-testclient.md) | TECHNICALLY_REVIEWED |
+| D26-T07 | Authentication test fixtures | [26_fastapi_testing/02-fixtures-and-mocks.md](26_fastapi_testing/02-fixtures-and-mocks.md) | TECHNICALLY_REVIEWED |
+| D26-T08 | Database test fixtures | [26_fastapi_testing/02-fixtures-and-mocks.md](26_fastapi_testing/02-fixtures-and-mocks.md) | TECHNICALLY_REVIEWED |
+| D26-T09 | Transaction rollback in tests | [26_fastapi_testing/02-fixtures-and-mocks.md](26_fastapi_testing/02-fixtures-and-mocks.md) | TECHNICALLY_REVIEWED |
+| D26-T10 | Test database setup | [26_fastapi_testing/02-fixtures-and-mocks.md](26_fastapi_testing/02-fixtures-and-mocks.md) | TECHNICALLY_REVIEWED |
+| D26-T11 | Mocking external APIs | [26_fastapi_testing/02-fixtures-and-mocks.md](26_fastapi_testing/02-fixtures-and-mocks.md) | TECHNICALLY_REVIEWED |
+| D26-T12 | Mocking model providers | [26_fastapi_testing/02-fixtures-and-mocks.md](26_fastapi_testing/02-fixtures-and-mocks.md) | TECHNICALLY_REVIEWED |
+| D26-T13 | Testing background jobs | [26_fastapi_testing/03-specialized-api-tests.md](26_fastapi_testing/03-specialized-api-tests.md) | TECHNICALLY_REVIEWED |
+| D26-T14 | Testing file uploads | [26_fastapi_testing/03-specialized-api-tests.md](26_fastapi_testing/03-specialized-api-tests.md) | TECHNICALLY_REVIEWED |
+| D26-T15 | Testing WebSockets | [26_fastapi_testing/03-specialized-api-tests.md](26_fastapi_testing/03-specialized-api-tests.md) | TECHNICALLY_REVIEWED |
+| D26-T16 | Testing exception handlers | [26_fastapi_testing/03-specialized-api-tests.md](26_fastapi_testing/03-specialized-api-tests.md) | TECHNICALLY_REVIEWED |
+| D26-T17 | OpenAPI contract validation | [26_fastapi_testing/03-specialized-api-tests.md](26_fastapi_testing/03-specialized-api-tests.md) | TECHNICALLY_REVIEWED |
+| D26-T18 | Coverage measurement | [26_fastapi_testing/04-coverage-load-and-docker-tests.md](26_fastapi_testing/04-coverage-load-and-docker-tests.md) | TECHNICALLY_REVIEWED |
+| D26-T19 | Load and performance tests | [26_fastapi_testing/04-coverage-load-and-docker-tests.md](26_fastapi_testing/04-coverage-load-and-docker-tests.md) | TECHNICALLY_REVIEWED |
+| D26-T20 | Docker-based integration tests | [26_fastapi_testing/04-coverage-load-and-docker-tests.md](26_fastapi_testing/04-coverage-load-and-docker-tests.md) | TECHNICALLY_REVIEWED |
+
+## Domain 27: FastAPI Security
+
+Directory: [27_fastapi_security](27_fastapi_security/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D27-T01 | Input validation | [27_fastapi_security/01-edge-and-session-controls.md](27_fastapi_security/01-edge-and-session-controls.md) | TECHNICALLY_REVIEWED |
+| D27-T02 | Authentication and authorization | [27_fastapi_security/01-edge-and-session-controls.md](27_fastapi_security/01-edge-and-session-controls.md) | TECHNICALLY_REVIEWED |
+| D27-T03 | CORS configuration | [27_fastapi_security/01-edge-and-session-controls.md](27_fastapi_security/01-edge-and-session-controls.md) | TECHNICALLY_REVIEWED |
+| D27-T04 | Trusted hosts | [27_fastapi_security/01-edge-and-session-controls.md](27_fastapi_security/01-edge-and-session-controls.md) | TECHNICALLY_REVIEWED |
+| D27-T05 | HTTPS and TLS termination | [27_fastapi_security/01-edge-and-session-controls.md](27_fastapi_security/01-edge-and-session-controls.md) | TECHNICALLY_REVIEWED |
+| D27-T06 | Secure cookies | [27_fastapi_security/01-edge-and-session-controls.md](27_fastapi_security/01-edge-and-session-controls.md) | TECHNICALLY_REVIEWED |
+| D27-T07 | CSRF considerations | [27_fastapi_security/01-edge-and-session-controls.md](27_fastapi_security/01-edge-and-session-controls.md) | TECHNICALLY_REVIEWED |
+| D27-T08 | SQL injection prevention | [27_fastapi_security/02-injection-uploads-and-limits.md](27_fastapi_security/02-injection-uploads-and-limits.md) | TECHNICALLY_REVIEWED |
+| D27-T09 | SSRF prevention | [27_fastapi_security/02-injection-uploads-and-limits.md](27_fastapi_security/02-injection-uploads-and-limits.md) | TECHNICALLY_REVIEWED |
+| D27-T10 | Request size limits | [27_fastapi_security/02-injection-uploads-and-limits.md](27_fastapi_security/02-injection-uploads-and-limits.md) | TECHNICALLY_REVIEWED |
+| D27-T11 | Upload security | [27_fastapi_security/02-injection-uploads-and-limits.md](27_fastapi_security/02-injection-uploads-and-limits.md) | TECHNICALLY_REVIEWED |
+| D27-T12 | Rate limiting | [27_fastapi_security/02-injection-uploads-and-limits.md](27_fastapi_security/02-injection-uploads-and-limits.md) | TECHNICALLY_REVIEWED |
+| D27-T13 | Brute-force protection | [27_fastapi_security/02-injection-uploads-and-limits.md](27_fastapi_security/02-injection-uploads-and-limits.md) | TECHNICALLY_REVIEWED |
+| D27-T14 | Secrets management | [27_fastapi_security/03-secrets-logging-and-dependencies.md](27_fastapi_security/03-secrets-logging-and-dependencies.md) | TECHNICALLY_REVIEWED |
+| D27-T15 | Security headers | [27_fastapi_security/03-secrets-logging-and-dependencies.md](27_fastapi_security/03-secrets-logging-and-dependencies.md) | TECHNICALLY_REVIEWED |
+| D27-T16 | PII protection | [27_fastapi_security/03-secrets-logging-and-dependencies.md](27_fastapi_security/03-secrets-logging-and-dependencies.md) | TECHNICALLY_REVIEWED |
+| D27-T17 | Audit logging | [27_fastapi_security/03-secrets-logging-and-dependencies.md](27_fastapi_security/03-secrets-logging-and-dependencies.md) | TECHNICALLY_REVIEWED |
+| D27-T18 | Dependency vulnerability scanning | [27_fastapi_security/03-secrets-logging-and-dependencies.md](27_fastapi_security/03-secrets-logging-and-dependencies.md) | TECHNICALLY_REVIEWED |
+| D27-T19 | Secure error handling | [27_fastapi_security/03-secrets-logging-and-dependencies.md](27_fastapi_security/03-secrets-logging-and-dependencies.md) | TECHNICALLY_REVIEWED |
+| D27-T20 | Least-privilege database credentials | [27_fastapi_security/03-secrets-logging-and-dependencies.md](27_fastapi_security/03-secrets-logging-and-dependencies.md) | TECHNICALLY_REVIEWED |
+
+## Domain 28: Performance and Scalability
+
+Directory: [28_scalability_performance](28_scalability_performance/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D28-T01 | Uvicorn worker processes | [28_scalability_performance/01-process-and-io-model.md](28_scalability_performance/01-process-and-io-model.md) | TECHNICALLY_REVIEWED |
+| D28-T02 | Worker count and CPU allocation | [28_scalability_performance/01-process-and-io-model.md](28_scalability_performance/01-process-and-io-model.md) | TECHNICALLY_REVIEWED |
+| D28-T03 | Async I/O performance | [28_scalability_performance/01-process-and-io-model.md](28_scalability_performance/01-process-and-io-model.md) | TECHNICALLY_REVIEWED |
+| D28-T04 | Blocking code detection | [28_scalability_performance/01-process-and-io-model.md](28_scalability_performance/01-process-and-io-model.md) | TECHNICALLY_REVIEWED |
+| D28-T05 | Database connection pools | [28_scalability_performance/02-pools-cache-and-payloads.md](28_scalability_performance/02-pools-cache-and-payloads.md) | TECHNICALLY_REVIEWED |
+| D28-T06 | HTTP connection pooling | [28_scalability_performance/02-pools-cache-and-payloads.md](28_scalability_performance/02-pools-cache-and-payloads.md) | TECHNICALLY_REVIEWED |
+| D28-T07 | Redis caching | [28_scalability_performance/02-pools-cache-and-payloads.md](28_scalability_performance/02-pools-cache-and-payloads.md) | TECHNICALLY_REVIEWED |
+| D28-T08 | Response compression | [28_scalability_performance/02-pools-cache-and-payloads.md](28_scalability_performance/02-pools-cache-and-payloads.md) | TECHNICALLY_REVIEWED |
+| D28-T09 | Streaming large responses | [28_scalability_performance/02-pools-cache-and-payloads.md](28_scalability_performance/02-pools-cache-and-payloads.md) | TECHNICALLY_REVIEWED |
+| D28-T10 | Request concurrency limits | [28_scalability_performance/02-pools-cache-and-payloads.md](28_scalability_performance/02-pools-cache-and-payloads.md) | TECHNICALLY_REVIEWED |
+| D28-T11 | Load balancing | [28_scalability_performance/03-scaling-and-shutdown.md](28_scalability_performance/03-scaling-and-shutdown.md) | TECHNICALLY_REVIEWED |
+| D28-T12 | Reverse proxy configuration | [28_scalability_performance/03-scaling-and-shutdown.md](28_scalability_performance/03-scaling-and-shutdown.md) | TECHNICALLY_REVIEWED |
+| D28-T13 | Horizontal scaling | [28_scalability_performance/03-scaling-and-shutdown.md](28_scalability_performance/03-scaling-and-shutdown.md) | TECHNICALLY_REVIEWED |
+| D28-T14 | Graceful shutdown | [28_scalability_performance/03-scaling-and-shutdown.md](28_scalability_performance/03-scaling-and-shutdown.md) | TECHNICALLY_REVIEWED |
+| D28-T15 | Memory usage | [28_scalability_performance/03-scaling-and-shutdown.md](28_scalability_performance/03-scaling-and-shutdown.md) | TECHNICALLY_REVIEWED |
+| D28-T16 | Profiling and bottleneck detection | [28_scalability_performance/04-measurement-and-saturation.md](28_scalability_performance/04-measurement-and-saturation.md) | TECHNICALLY_REVIEWED |
+| D28-T17 | Benchmarking | [28_scalability_performance/04-measurement-and-saturation.md](28_scalability_performance/04-measurement-and-saturation.md) | TECHNICALLY_REVIEWED |
+| D28-T18 | Load testing | [28_scalability_performance/04-measurement-and-saturation.md](28_scalability_performance/04-measurement-and-saturation.md) | TECHNICALLY_REVIEWED |
+| D28-T19 | Latency percentiles | [28_scalability_performance/04-measurement-and-saturation.md](28_scalability_performance/04-measurement-and-saturation.md) | TECHNICALLY_REVIEWED |
+| D28-T20 | Throughput and saturation | [28_scalability_performance/04-measurement-and-saturation.md](28_scalability_performance/04-measurement-and-saturation.md) | TECHNICALLY_REVIEWED |
+| D28-T21 | Resource exhaustion protection | [28_scalability_performance/04-measurement-and-saturation.md](28_scalability_performance/04-measurement-and-saturation.md) | TECHNICALLY_REVIEWED |
+
+## Domain 29: Configuration, Logging, and Observability
+
+Directory: [29_observability](29_observability/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D29-T01 | Pydantic Settings | [29_observability/01-settings-and-logs.md](29_observability/01-settings-and-logs.md) | TECHNICALLY_REVIEWED |
+| D29-T02 | Environment-specific configuration | [29_observability/01-settings-and-logs.md](29_observability/01-settings-and-logs.md) | TECHNICALLY_REVIEWED |
+| D29-T03 | .env files and secret handling | [29_observability/01-settings-and-logs.md](29_observability/01-settings-and-logs.md) | TECHNICALLY_REVIEWED |
+| D29-T04 | Structured JSON logging | [29_observability/01-settings-and-logs.md](29_observability/01-settings-and-logs.md) | TECHNICALLY_REVIEWED |
+| D29-T05 | Request IDs | [29_observability/01-settings-and-logs.md](29_observability/01-settings-and-logs.md) | TECHNICALLY_REVIEWED |
+| D29-T06 | Correlation IDs | [29_observability/01-settings-and-logs.md](29_observability/01-settings-and-logs.md) | TECHNICALLY_REVIEWED |
+| D29-T07 | Metrics | [29_observability/02-metrics-and-tracing.md](29_observability/02-metrics-and-tracing.md) | TECHNICALLY_REVIEWED |
+| D29-T08 | Prometheus | [29_observability/02-metrics-and-tracing.md](29_observability/02-metrics-and-tracing.md) | TECHNICALLY_REVIEWED |
+| D29-T09 | Grafana | [29_observability/02-metrics-and-tracing.md](29_observability/02-metrics-and-tracing.md) | TECHNICALLY_REVIEWED |
+| D29-T10 | OpenTelemetry | [29_observability/02-metrics-and-tracing.md](29_observability/02-metrics-and-tracing.md) | TECHNICALLY_REVIEWED |
+| D29-T11 | Distributed tracing | [29_observability/02-metrics-and-tracing.md](29_observability/02-metrics-and-tracing.md) | TECHNICALLY_REVIEWED |
+| D29-T12 | Error reporting | [29_observability/02-metrics-and-tracing.md](29_observability/02-metrics-and-tracing.md) | TECHNICALLY_REVIEWED |
+| D29-T13 | Health endpoints | [29_observability/03-health-slo-and-redaction.md](29_observability/03-health-slo-and-redaction.md) | TECHNICALLY_REVIEWED |
+| D29-T14 | Readiness checks | [29_observability/03-health-slo-and-redaction.md](29_observability/03-health-slo-and-redaction.md) | TECHNICALLY_REVIEWED |
+| D29-T15 | Liveness checks | [29_observability/03-health-slo-and-redaction.md](29_observability/03-health-slo-and-redaction.md) | TECHNICALLY_REVIEWED |
+| D29-T16 | Service-level indicators and objectives | [29_observability/03-health-slo-and-redaction.md](29_observability/03-health-slo-and-redaction.md) | TECHNICALLY_REVIEWED |
+| D29-T17 | Alerting | [29_observability/03-health-slo-and-redaction.md](29_observability/03-health-slo-and-redaction.md) | TECHNICALLY_REVIEWED |
+| D29-T18 | Log redaction | [29_observability/03-health-slo-and-redaction.md](29_observability/03-health-slo-and-redaction.md) | TECHNICALLY_REVIEWED |
+| D29-T19 | Monitoring external dependencies | [29_observability/03-health-slo-and-redaction.md](29_observability/03-health-slo-and-redaction.md) | TECHNICALLY_REVIEWED |
+
+## Domain 30: Deployment and Production Operations
+
+Directory: [30_deployment_operations](30_deployment_operations/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D30-T01 | Dockerizing FastAPI | [30_deployment_operations/01-container-images.md](30_deployment_operations/01-container-images.md) | TECHNICALLY_REVIEWED |
+| D30-T02 | Dockerfile best practices | [30_deployment_operations/01-container-images.md](30_deployment_operations/01-container-images.md) | TECHNICALLY_REVIEWED |
+| D30-T03 | Docker Compose | [30_deployment_operations/01-container-images.md](30_deployment_operations/01-container-images.md) | TECHNICALLY_REVIEWED |
+| D30-T04 | Multi-stage builds | [30_deployment_operations/01-container-images.md](30_deployment_operations/01-container-images.md) | TECHNICALLY_REVIEWED |
+| D30-T05 | Non-root containers | [30_deployment_operations/01-container-images.md](30_deployment_operations/01-container-images.md) | TECHNICALLY_REVIEWED |
+| D30-T06 | Health checks | [30_deployment_operations/01-container-images.md](30_deployment_operations/01-container-images.md) | TECHNICALLY_REVIEWED |
+| D30-T07 | Environment configuration | [30_deployment_operations/01-container-images.md](30_deployment_operations/01-container-images.md) | TECHNICALLY_REVIEWED |
+| D30-T08 | Reverse proxy with Nginx | [30_deployment_operations/02-proxy-server-and-migrations.md](30_deployment_operations/02-proxy-server-and-migrations.md) | TECHNICALLY_REVIEWED |
+| D30-T09 | TLS termination | [30_deployment_operations/02-proxy-server-and-migrations.md](30_deployment_operations/02-proxy-server-and-migrations.md) | TECHNICALLY_REVIEWED |
+| D30-T10 | Production ASGI server configuration | [30_deployment_operations/02-proxy-server-and-migrations.md](30_deployment_operations/02-proxy-server-and-migrations.md) | TECHNICALLY_REVIEWED |
+| D30-T11 | Worker processes and concurrency | [30_deployment_operations/02-proxy-server-and-migrations.md](30_deployment_operations/02-proxy-server-and-migrations.md) | TECHNICALLY_REVIEWED |
+| D30-T12 | Database migrations during deployment | [30_deployment_operations/02-proxy-server-and-migrations.md](30_deployment_operations/02-proxy-server-and-migrations.md) | TECHNICALLY_REVIEWED |
+| D30-T13 | CI/CD pipelines | [30_deployment_operations/03-delivery-pipelines.md](30_deployment_operations/03-delivery-pipelines.md) | TECHNICALLY_REVIEWED |
+| D30-T14 | Automated testing before deployment | [30_deployment_operations/03-delivery-pipelines.md](30_deployment_operations/03-delivery-pipelines.md) | TECHNICALLY_REVIEWED |
+| D30-T15 | Container image scanning | [30_deployment_operations/03-delivery-pipelines.md](30_deployment_operations/03-delivery-pipelines.md) | TECHNICALLY_REVIEWED |
+| D30-T16 | Rolling deployments | [30_deployment_operations/03-delivery-pipelines.md](30_deployment_operations/03-delivery-pipelines.md) | TECHNICALLY_REVIEWED |
+| D30-T17 | Blue-green and canary deployments | [30_deployment_operations/03-delivery-pipelines.md](30_deployment_operations/03-delivery-pipelines.md) | TECHNICALLY_REVIEWED |
+| D30-T18 | Kubernetes fundamentals | [30_deployment_operations/04-runtime-operations.md](30_deployment_operations/04-runtime-operations.md) | TECHNICALLY_REVIEWED |
+| D30-T19 | Graceful shutdown and draining | [30_deployment_operations/04-runtime-operations.md](30_deployment_operations/04-runtime-operations.md) | TECHNICALLY_REVIEWED |
+| D30-T20 | Backup and recovery | [30_deployment_operations/04-runtime-operations.md](30_deployment_operations/04-runtime-operations.md) | TECHNICALLY_REVIEWED |
+| D30-T21 | Production troubleshooting | [30_deployment_operations/04-runtime-operations.md](30_deployment_operations/04-runtime-operations.md) | TECHNICALLY_REVIEWED |
+| D30-T22 | Incident response | [30_deployment_operations/04-runtime-operations.md](30_deployment_operations/04-runtime-operations.md) | TECHNICALLY_REVIEWED |
+
+## Domain 31: FastAPI for AI Engineering
+
+Directory: [31_ai_engineering_integration](31_ai_engineering_integration/)
+
+| Topic ID | Title | Chapter | Status |
+| --- | --- | --- | --- |
+| D31-T01 | Building LLM APIs with FastAPI | [31_ai_engineering_integration/01-llm-api-surface.md](31_ai_engineering_integration/01-llm-api-surface.md) | TECHNICALLY_REVIEWED |
+| D31-T02 | Integrating hosted LLM providers | [31_ai_engineering_integration/01-llm-api-surface.md](31_ai_engineering_integration/01-llm-api-surface.md) | TECHNICALLY_REVIEWED |
+| D31-T03 | Local model inference endpoints | [31_ai_engineering_integration/01-llm-api-surface.md](31_ai_engineering_integration/01-llm-api-surface.md) | TECHNICALLY_REVIEWED |
+| D31-T04 | Pydantic schemas for AI requests and responses | [31_ai_engineering_integration/01-llm-api-surface.md](31_ai_engineering_integration/01-llm-api-surface.md) | TECHNICALLY_REVIEWED |
+| D31-T05 | Streaming LLM responses with SSE | [31_ai_engineering_integration/01-llm-api-surface.md](31_ai_engineering_integration/01-llm-api-surface.md) | TECHNICALLY_REVIEWED |
+| D31-T06 | Async model API calls | [31_ai_engineering_integration/01-llm-api-surface.md](31_ai_engineering_integration/01-llm-api-surface.md) | TECHNICALLY_REVIEWED |
+| D31-T07 | Timeouts and retries for model providers | [31_ai_engineering_integration/02-provider-reliability-and-cost.md](31_ai_engineering_integration/02-provider-reliability-and-cost.md) | TECHNICALLY_REVIEWED |
+| D31-T08 | Provider rate limits | [31_ai_engineering_integration/02-provider-reliability-and-cost.md](31_ai_engineering_integration/02-provider-reliability-and-cost.md) | TECHNICALLY_REVIEWED |
+| D31-T09 | Token usage and cost tracking | [31_ai_engineering_integration/02-provider-reliability-and-cost.md](31_ai_engineering_integration/02-provider-reliability-and-cost.md) | TECHNICALLY_REVIEWED |
+| D31-T10 | Request cancellation | [31_ai_engineering_integration/02-provider-reliability-and-cost.md](31_ai_engineering_integration/02-provider-reliability-and-cost.md) | TECHNICALLY_REVIEWED |
+| D31-T11 | RAG query endpoints | [31_ai_engineering_integration/03-rag-and-ingestion.md](31_ai_engineering_integration/03-rag-and-ingestion.md) | TECHNICALLY_REVIEWED |
+| D31-T12 | Document ingestion APIs | [31_ai_engineering_integration/03-rag-and-ingestion.md](31_ai_engineering_integration/03-rag-and-ingestion.md) | TECHNICALLY_REVIEWED |
+| D31-T13 | Background document processing | [31_ai_engineering_integration/03-rag-and-ingestion.md](31_ai_engineering_integration/03-rag-and-ingestion.md) | TECHNICALLY_REVIEWED |
+| D31-T14 | Vector database integration | [31_ai_engineering_integration/03-rag-and-ingestion.md](31_ai_engineering_integration/03-rag-and-ingestion.md) | TECHNICALLY_REVIEWED |
+| D31-T15 | Agent execution APIs | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T16 | MCP client integration | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T17 | Authentication for AI tools | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T18 | Conversation and memory persistence | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T19 | Job queues for long-running agents | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T20 | Model fallback and routing | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T21 | Prompt and model versioning | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T22 | AI response evaluation | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T23 | Tracing model calls, retrieval, and tool execution | [31_ai_engineering_integration/04-agents-memory-and-evaluation.md](31_ai_engineering_integration/04-agents-memory-and-evaluation.md) | TECHNICALLY_REVIEWED |
+| D31-T24 | Tenant isolation | [31_ai_engineering_integration/05-tenant-guardrails-and-cost.md](31_ai_engineering_integration/05-tenant-guardrails-and-cost.md) | TECHNICALLY_REVIEWED |
+| D31-T25 | AI API usage quotas | [31_ai_engineering_integration/05-tenant-guardrails-and-cost.md](31_ai_engineering_integration/05-tenant-guardrails-and-cost.md) | TECHNICALLY_REVIEWED |
+| D31-T26 | Guardrails and output validation | [31_ai_engineering_integration/05-tenant-guardrails-and-cost.md](31_ai_engineering_integration/05-tenant-guardrails-and-cost.md) | TECHNICALLY_REVIEWED |
+| D31-T27 | AI-specific observability and cost dashboards | [31_ai_engineering_integration/05-tenant-guardrails-and-cost.md](31_ai_engineering_integration/05-tenant-guardrails-and-cost.md) | TECHNICALLY_REVIEWED |
+
+## Projects
+
+- DRAFTED_UNTESTED: [Project A: E-commerce REST API](projects/ecommerce_rest_api/)
+- DRAFTED_UNTESTED: [Project B: Asynchronous Job Processing API](projects/asynchronous_job_api/)
+- DRAFTED_UNTESTED: [Project C: Production AI API](projects/production_ai_api/)
